@@ -20,5 +20,7 @@ This plugin adds the following short codes to your WordPress site:
 * [c_month] - Outputs the Current Month (e.g. December)
 * [today] - Outputs the Full Date, month and year  (e.g. November 09, 1994)
 * [c_day] - Outputs the Current Day  (e.g. Monday)
+* [n_month] - Outputs the name of next month  (e.g. This month is December when you use given shortcode output must be January)
+* [p_month] - Outputs the name of previous month  (e.g. This month is December when you use given shortcode output must be November)
 * [copyrights] - Outputs the Footer Copyrights with (All Rights Reserved) text.
 * [copy] - Outputs the © Symbol if user want show this symbol anywhere in where installed this plugin

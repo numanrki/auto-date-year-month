@@ -67,6 +67,23 @@ function add_next_year_shortcode_aadmy()
 }
 add_shortcode('n_year', 'add_next_year_shortcode_aadmy');
 
+/* Next Month Name*/
+function get_next_month_aadmy() {
+  $current_month = date('m');
+    $next_month = $current_month + 1;
+    $next_month_name = date('F', strtotime("2020-$next_month-01"));
+    return $next_month_name;
+}
+add_shortcode( 'n_month', 'get_next_month_aadmy' );
+
+/* Previous Month Name */
+function get_prev_month_aadmy() {
+  $current_month = date('m');
+  $prev_month = $current_month - 1;
+  $prev_month_name = date('F', strtotime("2020-$prev_month-01"));
+  return $prev_month_name;
+}
+add_shortcode( 'p_month', 'get_prev_month_aadmy' );
 // Also Work with WP Basic elements, Like Titles, Post Title, Expcerts
 
 add_filter( 'the_title', 'do_shortcode' );
