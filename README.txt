@@ -1,4 +1,4 @@
-=== AUTO DATE YEAR MONTH ===
+=== (AADMY) Add Auto Date Month Year In Posts Dynamically ===
 Contributors: NUMAN RASHEED
 Tags: current year, previous year, next year, dynamic year. auto date,dynamic date, auto dates in posts, auto dates in blog/sites
 Requires at least: 4.7
