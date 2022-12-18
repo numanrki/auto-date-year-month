@@ -86,8 +86,8 @@ function get_prev_month_aadmy() {
   return $prev_month_name;
 }
 add_shortcode( 'p_month', 'get_prev_month_aadmy' );
-// Also Work with WP Basic elements, Like Titles, Post Title, Expcerts
 
+// Also Work with WP Basic elements, Like Titles, Post Title, Expcerts
 add_filter( 'the_title', 'do_shortcode' );
 add_filter( 'single_post_title', 'do_shortcode' );
 add_filter( 'wp_title', 'do_shortcode' );
