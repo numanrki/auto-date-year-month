@@ -12,9 +12,9 @@ add_shortcode('s_title', 'shortcode_get_domain_name_aadmy');
 // Add Copy Rights 
 
 function copyright_symbol_shortcode_aadmy() {
-    return '&copy; All rights reserved.';
+    return '&copy; [c_year] [s_title] All Rights Reserved. ';
   }
-  add_shortcode('copyrights', 'copyright_symbol_shortcode_aadmy');
+  add_shortcode('f_copyrights', 'copyright_symbol_shortcode_aadmy');
   
   // Add Copy Rights Symbol
   
