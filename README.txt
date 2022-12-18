@@ -8,7 +8,7 @@ License: GPL2
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
 
-A simple plugin that adds the current, previous, and next year,month dynamically to WordPress posts, pages, and anywhere else on the site using short codes.
+A simple WordPress plugin that adds the current, previous, and next year,month dynamically to WordPress posts, pages, and anywhere else on the site using short codes.
 
 == Description ==
 
