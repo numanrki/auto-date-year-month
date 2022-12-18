@@ -14,7 +14,7 @@ A simple WordPress plugin that adds the current, previous, and next year,month d
 
 This plugin adds the following short codes to your WordPress site:
 
-* [c_year] - This would output the current year, the previous year, and the next year in the post, like this: (e.g. 2021)
+* [c_year] - This would output the current year, the previous year, and the next year in the post, like this: (e.g. 2022)
 * [p_year] - Outputs the previous year (e.g. 2021)
 * [n_year] - Outputs the next year (e.g. 2023)
 * [c_month] - Outputs the Current Month (e.g. December)
