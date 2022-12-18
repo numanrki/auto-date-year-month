@@ -27,3 +27,7 @@ Other Shortcodes
 * [f_copyrights] - Stants For [Full Copyrights] Outputs the Footer Copyrights with (All Rights Reserved) text.
 * [copy] - Stants For [Just Copyrights Symbol] Outputs the © Symbol if user want show this symbol anywhere in where installed this plugin
 * [s_title] - Stants For [Site Title] Outputs the Site URL with anchoring the Site Name 
+
+Call Shortcodes with in php
+* Use this: echo do_shortcode('[shortcode_name]');
+
