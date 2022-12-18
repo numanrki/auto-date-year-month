@@ -3,7 +3,7 @@
  * Plugin Name: (AADMY) Add Auto Date Month Year In Posts Dynamically
  * Plugin URI: https://wordpress.org/plugins/add-auto-date-month-year-in-posts-dynamically
  * Description: A simple WordPress plugin that adds the current year, month, day, next year, previous year dynamically to WordPress posts, pages, and anywhere else on the site using a short code.
- * Version: 1.0.0
+ * Version: 1.1.0
  * Requires at least: 4.7
  * Tested up to: 6.0
  * Author: Numan Rasheed
@@ -14,10 +14,12 @@
 
 
 // If this file is called directly, abort.
+include 'other-functions.php';
+
 if ( ! defined( 'WPINC' ) ) {
   die;
 }
-define( 'Auto_Date_Year_Month_AADMY', '1.0.0' );
+define( 'Auto_Date_Year_Month_AADMY', '1.1.0' );
 
 /* Current Year */
 function add_current_year_shortcode_aadmy()
@@ -92,16 +94,3 @@ add_filter( 'wp_title', 'do_shortcode' );
 add_filter('the_excerpt', 'do_shortcode');
 
 
-// Add Copy Rights 
-
-function copyright_symbol_shortcode_aadmy() {
-  return '&copy; All rights reserved.';
-}
-add_shortcode('copyrights', 'copyright_symbol_shortcode_aadmy');
-
-// Add Copy Rights Symbol
-
-function copy_symbol_shortcode_aadmy() {
-  return '&copy;';
-}
-add_shortcode('copy', 'copy_symbol_shortcode_aadmy');
