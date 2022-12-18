@@ -1,4 +1,4 @@
-# add-auto-date-month-year-in-posts-dynamically
+# Add Auto Date Month Year in Posts Dynamically
 A simple plugin that adds the current, previous, and next year,month dynamically to WordPress posts, pages, and anywhere else on the site using short codes.
 === AUTO DATE YEAR MONTH ===
 Contributors: NUMAN RASHEED
