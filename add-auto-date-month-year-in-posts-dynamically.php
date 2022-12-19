@@ -14,7 +14,7 @@
 
 
 // If this file is called directly, abort.
-include 'other-functions.php';
+
 
 if ( ! defined( 'WPINC' ) ) {
   die;
@@ -100,6 +100,12 @@ function get_prev_month_aadmy() {
 }
 add_shortcode( 'p_month', 'get_prev_month_aadmy' );
 
+function get_aadmy_other_shortcodes(){
+  include 'other-functions.php';
+  add_shortcode('s_title', 'shortcode_get_domain_name_aadmy');
+  add_shortcode('f_copyrights', 'copyright_symbol_shortcode_aadmy');
+  add_shortcode('copy', 'copy_symbol_shortcode_aadmy');
+}
 // Also Work with WP Basic elements, Like Titles, Post Title, Expcerts
 add_filter( 'the_title', 'do_shortcode' );
 add_filter( 'single_post_title', 'do_shortcode' );
