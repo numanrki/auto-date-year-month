@@ -8,7 +8,8 @@ License: GPL2
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
 
-A simple WordPress plugin that adds the current, previous, and next year,month dynamically to WordPress posts, pages, and anywhere else on the site using short codes. Make your Content SEO Updated.
+This WordPress plugin allows you to dynamically add current dates, years, months, and other time-related elements to your content. It helps to keep your content up-to-date and improve your SEO by ensuring that your website's content is always fresh and relevant. With this plugin, you can easily add dynamic current time elements to your website without any coding knowledge.
+
 
 == Description ==
 
