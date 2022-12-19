@@ -48,6 +48,11 @@ tr:nth-child(even) {
     <td><b>[c_day]</b></td>
   </tr>
   <tr>
+    <td>Current Date</td>
+    <td><?php echo do_shortcode('[c_date]'); ?></td>
+    <td><b>[c_date]</b></td>
+  </tr>
+  <tr>
     <td>Current Month</td>
     <td><?php echo do_shortcode('[c_month]'); ?></td>
     <td><b>[c_month]</b></td>
