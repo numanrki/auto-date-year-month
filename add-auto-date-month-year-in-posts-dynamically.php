@@ -110,3 +110,16 @@ add_filter('widget_text', 'do_shortcode');
 add_action('wp_footer', 'do_shortcode');
 
 include 'aadmy-menu.php';
+
+// Settings Link ight Next to deactive Link
+add_filter( 'plugin_action_links', 'custom_plugin_settings_link', 10, 2 );
+function custom_plugin_settings_link_aadmy( $links, $file ) {
+    static $this_plugin;
+    if ( !$this_plugin ) $this_plugin = plugin_basename(__FILE__);
+ 
+    if ( $file == $this_plugin ) {
+        $settings_link = '<a href="' . get_bloginfo( 'wpurl' ) . '/wp-admin/options-general.php?page=aadmy-settings">Shortcodes List</a>';
+        array_unshift( $links, $settings_link );
+    }
+    return $links;
+}
