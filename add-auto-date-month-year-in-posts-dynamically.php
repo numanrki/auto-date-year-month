@@ -45,6 +45,12 @@ function add_current_day_shortcode_aadmy()
 }
 add_shortcode('c_day', 'add_current_day_shortcode_aadmy');
 
+// Current Date
+function add_current_date_shortcode_aadmy( $atts ){
+  return date( 'F j, Y' );
+}
+add_shortcode( 'c_date', 'add_current_date_shortcode_aadmy' );
+
 // Short form of Day
 function add_current_short_day_shortcode_aadmy() {
   $current_day_short = date('D');
