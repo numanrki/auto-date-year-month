@@ -47,7 +47,7 @@ add_shortcode('c_day', 'add_current_day_shortcode_aadmy');
 
 // Current Date
 function add_current_date_shortcode_aadmy( $atts ){
-  return date( 'F j, Y' );
+  return date( 'j' );
 }
 add_shortcode( 'c_date', 'add_current_date_shortcode_aadmy' );
 
