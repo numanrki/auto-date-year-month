@@ -19,6 +19,45 @@
 if ( ! defined( 'WPINC' ) ) {
   die;
 }
+
+if ( ! function_exists( 'aadmyipd_fs' ) ) {
+  // Create a helper function for easy SDK access.
+  function aadmyipd_fs() {
+      global $aadmyipd_fs;
+
+      if ( ! isset( $aadmyipd_fs ) ) {
+          // Include Freemius SDK.
+          require_once dirname(__FILE__) . '/freemius/start.php';
+
+          $aadmyipd_fs = fs_dynamic_init( array(
+              'id'                  => '11653',
+              'slug'                => 'add-auto-date-month-year-in-posts-dynamically',
+              'type'                => 'plugin',
+              'public_key'          => 'pk_f571b91cf88e2eaa5eb8e0f903478',
+              'is_premium'          => false,
+              'has_addons'          => false,
+              'has_paid_plans'      => false,
+              'menu'                => array(
+                  'slug'           => 'aadmy-settings',
+                  'first-path'     => 'options-general.php?page=aadmy-settings',
+                  'account'        => false,
+                  'contact'        => false,
+                  'parent'         => array(
+                      'slug' => 'options-general.php',
+                  ),
+              ),
+          ) );
+      }
+
+      return $aadmyipd_fs;
+  }
+
+  // Init Freemius.
+  aadmyipd_fs();
+  // Signal that SDK was initiated.
+  do_action( 'aadmyipd_fs_loaded' );
+}
+
 define( 'Auto_Date_Year_Month_AADMY', '1.0.1' );
 
 /* Current Year */
