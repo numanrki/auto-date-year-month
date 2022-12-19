@@ -112,7 +112,7 @@ add_action('wp_footer', 'do_shortcode');
 include 'aadmy-menu.php';
 
 // Settings Link ight Next to deactive Link
-add_filter( 'plugin_action_links', 'custom_plugin_settings_link', 10, 2 );
+add_filter( 'plugin_action_links', 'custom_plugin_settings_link_aadmy', 10, 2 );
 function custom_plugin_settings_link_aadmy( $links, $file ) {
     static $this_plugin;
     if ( !$this_plugin ) $this_plugin = plugin_basename(__FILE__);
