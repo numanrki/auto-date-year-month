@@ -63,7 +63,7 @@ define( 'Auto_Date_Year_Month_AADMY', '1.0.1' );
 /* Current Year */
 function add_current_year_shortcode_aadmy()
 {
-  $current_year = date('Y');
+  $current_year = date_i18n('Y');
   return $current_year;
 }
 add_shortcode('c_year', 'add_current_year_shortcode_aadmy');
@@ -71,7 +71,7 @@ add_shortcode('c_year', 'add_current_year_shortcode_aadmy');
 /* Current Month */
 function add_current_month_shortcode_aadmy()
 {
-  $current_month = date('F');
+  $current_month = date_i18n('F');
   return $current_month;
 }
 add_shortcode('c_month', 'add_current_month_shortcode_aadmy');
@@ -79,20 +79,20 @@ add_shortcode('c_month', 'add_current_month_shortcode_aadmy');
 /* Current Day */
 function add_current_day_shortcode_aadmy()
 {
-  $current_day = date('l');
+  $current_day = date_i18n('l');
   return $current_day;
 }
 add_shortcode('c_day', 'add_current_day_shortcode_aadmy');
 
 // Current Date
 function add_current_n_date_shortcode_aadmy( $atts ){
-  return date( 'j' );
+  return date_i18n( 'j' );
 }
 add_shortcode( 'c_date', 'add_current_n_date_shortcode_aadmy' );
 
 // Short form of Day
 function add_current_short_day_shortcode_aadmy() {
-  $current_day_short = date('D');
+  $current_day_short = date_i18n('D');
   return $current_day_short;
 }
 add_shortcode('s_day', 'add_current_short_day_shortcode_aadmy');
@@ -100,7 +100,7 @@ add_shortcode('s_day', 'add_current_short_day_shortcode_aadmy');
 /* Full Date */
 function add_current_date_shortcode_aadmy()
 {
-  $current_date = date('F j, Y');
+  $current_date = date_i18n('F j, Y');
   return $current_date;
 }
 add_shortcode('today', 'add_current_date_shortcode_aadmy');
@@ -108,7 +108,7 @@ add_shortcode('today', 'add_current_date_shortcode_aadmy');
 /* Previous Year */
 function add_previous_year_shortcode_aadmy()
 {
-  $previous_year = date('Y', strtotime('-1 year'));
+  $previous_year = date_i18n('Y', strtotime('-1 year'));
   return $previous_year;
 }
 add_shortcode('p_year', 'add_previous_year_shortcode_aadmy');
@@ -116,25 +116,25 @@ add_shortcode('p_year', 'add_previous_year_shortcode_aadmy');
 /* Next Year */
 function add_next_year_shortcode_aadmy()
 {
-  $next_year = date('Y', strtotime('+1 year'));
+  $next_year = date_i18n('Y', strtotime('+1 year'));
   return $next_year;
 }
 add_shortcode('n_year', 'add_next_year_shortcode_aadmy');
 
 /* Next Month Name*/
 function get_next_month_aadmy() {
-  $current_month = date('m');
+  $current_month = date_i18n('m');
     $next_month = $current_month + 1;
-    $next_month_name = date('F', strtotime("2020-$next_month-01"));
+    $next_month_name = date_i18n('F', strtotime("2020-$next_month-01"));
     return $next_month_name;
 }
 add_shortcode( 'n_month', 'get_next_month_aadmy' );
 
 /* Previous Month Name */
 function get_prev_month_aadmy() {
-  $current_month = date('m');
+  $current_month = date_i18n('m');
   $prev_month = $current_month - 1;
-  $prev_month_name = date('F', strtotime("2020-$prev_month-01"));
+  $prev_month_name = date_i18n('F', strtotime("2020-$prev_month-01"));
   return $prev_month_name;
 }
 add_shortcode( 'p_month', 'get_prev_month_aadmy' );
