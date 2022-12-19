@@ -3,7 +3,7 @@ Contributors: NUMAN RASHEED
 Tags: current year, previous year, next year, dynamic year. auto date,dynamic date, auto dates in posts, auto dates in blog/sites
 Requires at least: 4.7
 Tested up to: 6.0
-Stable tag: 1.1.0
+Stable tag: 1.0.1
 License: GPL2
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
