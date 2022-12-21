@@ -139,6 +139,13 @@ function get_prev_month_aadmy() {
 }
 add_shortcode( 'p_month', 'get_prev_month_aadmy' );
 
+// Modified date of Posts/Pages
+function modified_date_shortcode_aadmy() {
+  global $post;
+  $modified_date = get_the_modified_date();
+  return $modified_date;
+}
+add_shortcode('post_modified', 'modified_date_shortcode_aadmy');
 
 // Also Work with WP Basic elements, Like Titles, Post Title, Expcerts
 add_filter( 'the_title', 'do_shortcode' );
