@@ -1,6 +1,9 @@
 === (AADMY) Add Auto Date Month Year In Posts Dynamically ===
 Contributors: NUMAN RASHEED
 Tags: current year, previous year, next year, dynamic year. auto date,dynamic date, auto dates in posts, auto dates in blog/sites
+Author URI: https://wordpress.org/plugins/auto-date-year-month/
+Author: https://numanrki.com
+Donate link: 
 Requires at least: 4.7
 Tested up to: 6.0
 Stable tag: 1.0.1
@@ -32,3 +35,66 @@ Other Shortcodes
 Call Shortcodes with in php
 * Use this: echo do_shortcode('[shortcode_name]');
 
+== Installation ==
+
+* Download the plugin file. The plugin file will usually be in the form of a .zip file.
+
+* Log in to your WordPress dashboard.
+
+* Navigate to the "Plugins" section by clicking on the "Plugins" link in the left-hand menu.
+
+* Click on the "Add New" button at the top of the page.
+
+* Click on the "Upload Plugin" button.
+
+* Choose the .zip file you downloaded in step 1, and then click on the "Install Now" button.
+
+* Once the plugin has been installed, click on the "Activate Plugin" link to activate it.
+
+* The plugin should now be installed and activated on your WordPress site. You can access the plugin's settings and options by clicking on the "Settings" link for the plugin on the "Plugins" page.
+
+* Note: Some plugins may require additional steps to be fully configured and functional on your site. Be sure to read the documentation provided by the plugin developer for any additional instructions.
+
+
+== Upgrade Notice ==
+
+* Attention users of the (AADMY) Add Auto Date Month Year In Posts Dynamically plugin!
+
+* We are excited to announce that a new version of our plugin is now available for upgrade. This update includes several new features and bug fixes to improve the overall performance of the plugin.
+
+* Here are some of the highlights of this update:
+
+* Feature 1: Dynamically Add Current Date, Day, Month, Year 
+* Bug fix: Fix the Output and set it to localized
+
+== Screenshots ==
+
+1. Screenshot_1 #1
+2. Screenshot_2 #2
+3. Screenshot_3 #3
+4. Screenshot_4 #4
+
+== Changelog ==
+
+= 1.0.0 =
+
+* Initial release of the plugin
+
+= 1.0.1 =
+
+* Feature 1: Dynamically Add Current Date, Day, Month, Year 
+* Bug fix: Fix the Output and set it to localized
+
+
+== Frequently Asked Questions ==
+
+== Can I display the current month or day using your plugin? ==
+* Yes, you can display the current month or day using the shortcodes [c_month] respectively. These shortcodes will automatically update to display the current month to the page is loaded.
+== How do I add the shortcodes to my website? ==
+* To add the shortcodes to your website, simply insert them into the content of your page or post where you want them to be displayed. You can also add the shortcodes to your theme's template files if you want them to be displayed on multiple pages or posts.
+== Can I use your plugin to display the current time? ==
+* No, our plugin does not have a feature to display the current time. However, this feature will be available to use in future updates. 
+* If you have a problem with our plugin or have any questions, you can contact our support team by emailing salam@numanrki.com or by visiting our support forum at https://wordpress.org/support/plugin/auto-date-year-month/. We will do our best to assist you and resolve any issues you may have.
+
+
+== Donations ==
