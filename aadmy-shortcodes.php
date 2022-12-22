@@ -75,6 +75,7 @@ tr:nth-child(even) {
 </table>
 <h2>(AADMY) Extra Shortcodes List (Coming Soon)</h2>
 <table>
+
 <tr>
     <th>Purpose</th>
     <th>e.g.</th>
