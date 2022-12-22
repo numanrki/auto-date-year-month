@@ -60,6 +60,13 @@ if ( ! function_exists( 'aadmyipd_fs' ) ) {
 
 define( 'Auto_Date_Year_Month_AADMY', '1.0.2' );
 
+//Other Functions to process
+require 'other-functions.php';
+shortcode_get_domain_name_aadmy();
+copyright_symbol_shortcode_aadmy();
+copy_symbol_shortcode_aadmy();
+modified_date_shortcode_aadmy();
+
 /* Current Year */
 function add_current_year_shortcode_aadmy()
 {
@@ -123,12 +130,11 @@ add_shortcode('n_year', 'add_next_year_shortcode_aadmy');
 
 /* Next Month Name*/
 function get_next_month_aadmy() {
-  $current_month = date_i18n('m');
-    $next_month = $current_month + 1;
-    $next_month_name = date_i18n('F', strtotime("2020-$next_month-01"));
-    return $next_month_name;
+  $next_month = date_i18n('F', strtotime('+1 month'));
+  return $next_month;
 }
-add_shortcode( 'n_month', 'get_next_month_aadmy' );
+add_shortcode('n_month', 'get_next_month_aadmy');
+
 
 /* Previous Month Name */
 function get_prev_month_aadmy() {
@@ -140,12 +146,6 @@ function get_prev_month_aadmy() {
 add_shortcode( 'p_month', 'get_prev_month_aadmy' );
 
 
-//Other Functions to process
-require 'other-functions.php';
-shortcode_get_domain_name_aadmy();
-copyright_symbol_shortcode_aadmy();
-copy_symbol_shortcode_aadmy();
-modified_date_shortcode_aadmy();
 // Also Work with WP Basic elements, Like Titles, Post Title, Expcerts
 add_filter( 'the_title', 'do_shortcode' );
 add_filter( 'single_post_title', 'do_shortcode' );
