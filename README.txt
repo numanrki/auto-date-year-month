@@ -3,7 +3,7 @@ Contributors: NUMAN RASHEED
 Tags: current year, previous year, next year, dynamic year. auto date,dynamic date, auto dates in posts, auto dates in blog/sites
 Author URI: https://wordpress.org/plugins/auto-date-year-month/
 Author: https://numanrki.com
-Donate link: 
+Donate link: https://bit.ly/aadmyDonation
 Requires at least: 4.7
 Tested up to: 6.0
 Stable tag: 1.0.1
@@ -69,32 +69,39 @@ Call Shortcodes with in php
 
 == Screenshots ==
 
-1. Screenshot_1 #1
-2. Screenshot_2 #2
-3. Screenshot_3 #3
-4. Screenshot_4 #4
+1. List of shortcodes
+2. Table of shortcodes
+3. Using of shortcodes
+4. output of shortcodes
 
 == Changelog ==
 
 = 1.0.0 =
+Initial Release: December 21, 2022
 
-* Initial release of the plugin
+* Initial Release
 
 = 1.0.1 =
+Bugs Fixed and Some Other Changings: December 21, 2022
 
-* Feature 1: Dynamically Add Current Date, Day, Month, Year 
-* Bug fix: Fix the Output and set it to localized
+* Bugs Fixed
+* Table and Menu Registered
+
+= 1.0.3 =
+* Bugs Fixed and New shortcodes added: Decembed 22, 2022
+* Copy Symbol & Copyrights Text short code added.
+* Show Last Modified Date using shortcode added
 
 
 == Frequently Asked Questions ==
 
 == Can I display the current month or day using your plugin? ==
-* Yes, you can display the current month or day using the shortcodes [c_month] respectively. These shortcodes will automatically update to display the current month to the page is loaded.
+Yes, you can display the current month or day using the shortcodes [c_month] respectively. These shortcodes will automatically update to display the current month to the page is loaded.
 == How do I add the shortcodes to my website? ==
-* To add the shortcodes to your website, simply insert them into the content of your page or post where you want them to be displayed. You can also add the shortcodes to your theme's template files if you want them to be displayed on multiple pages or posts.
+To add the shortcodes to your website, simply insert them into the content of your page or post where you want them to be displayed. You can also add the shortcodes to your theme's template files if you want them to be displayed on multiple pages or posts.
 == Can I use your plugin to display the current time? ==
-* No, our plugin does not have a feature to display the current time. However, this feature will be available to use in future updates. 
-* If you have a problem with our plugin or have any questions, you can contact our support team by emailing salam@numanrki.com or by visiting our support forum at https://wordpress.org/support/plugin/auto-date-year-month/. We will do our best to assist you and resolve any issues you may have.
+No, our plugin does not have a feature to display the current time. However, this feature will be available to use in future updates. 
+* If you have a problem with our plugin or have any questions, you can contact our support team by emailing salam@numanrki.com or by [visiting our support forum](https://wordpress.org/support/plugin/auto-date-year-month/). We will do our best to assist you and resolve any issues you may have.
 
 
 == Donations ==
