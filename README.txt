@@ -6,7 +6,7 @@ Author: https://numanrki.com
 Donate link: https://bit.ly/aadmyDonation
 Requires at least: 4.7
 Tested up to: 6.0
-Stable tag: 1.0.1
+Stable tag: 1.0.2
 License: GPL2
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -35,7 +35,7 @@ Other Shortcodes
 Call Shortcodes with in php
 * Use this: echo do_shortcode('[shortcode_name]');
 
-#### Compatibility
+Compatibility
 * This plugin is compatible with WordPress versions 4.7 and higher, as well as with any WordPress theme.
 
 == Installation ==
@@ -90,7 +90,7 @@ Bugs Fixed and Some Other Changings: December 21, 2022
 * Bugs Fixed
 * Table and Menu Registered
 
-= 1.0.3 =
+= 1.0.2 =
 * Bugs Fixed and New shortcodes added: Decembed 22, 2022
 * Copy Symbol & Copyrights Text short code added.
 * Show Last Modified Date using shortcode added
