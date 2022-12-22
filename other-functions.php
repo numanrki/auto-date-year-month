@@ -1,12 +1,4 @@
 <?php
-// Also Work with WP Basic elements, Like Titles, Post Title, Expcerts
-add_filter( 'the_title', 'do_shortcode' );
-add_filter( 'single_post_title', 'do_shortcode' );
-add_filter( 'wp_title', 'do_shortcode' );
-add_filter('the_excerpt', 'do_shortcode');
-add_filter('widget_text', 'do_shortcode');
-add_action('wp_footer', 'do_shortcode');
-
 // Add Site Name with URL 
 function shortcode_get_domain_name_aadmy()
 {

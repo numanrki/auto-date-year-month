@@ -31,7 +31,7 @@ if ( ! function_exists( 'aadmyipd_fs' ) ) {
 
           $aadmyipd_fs = fs_dynamic_init( array(
               'id'                  => '11653',
-              'slug'                => 'add-auto-date-month-year-in-posts-dynamically',
+              'slug'                => 'auto-date-year-month',
               'type'                => 'plugin',
               'public_key'          => 'pk_f571b91cf88e2eaa5eb8e0f903478',
               'is_premium'          => false,
@@ -147,6 +147,11 @@ function modified_date_shortcode_aadmy() {
 }
 add_shortcode('post_modified', 'modified_date_shortcode_aadmy');
 
+//Other Functions to process
+require 'other-functions.php';
+shortcode_get_domain_name_aadmy();
+copyright_symbol_shortcode_aadmy();
+copy_symbol_shortcode_aadmy();
 // Also Work with WP Basic elements, Like Titles, Post Title, Expcerts
 add_filter( 'the_title', 'do_shortcode' );
 add_filter( 'single_post_title', 'do_shortcode' );
@@ -157,15 +162,16 @@ add_action('wp_footer', 'do_shortcode');
 
 include 'aadmy-menu.php';
 
-// Settings Link ight Next to deactive Link
-add_filter( 'plugin_action_links', 'custom_plugin_settings_link_aadmy', 10, 2 );
-function custom_plugin_settings_link_aadmy( $links, $file ) {
-    static $this_plugin;
-    if ( !$this_plugin ) $this_plugin = plugin_basename(__FILE__);
- 
-    if ( $file == $this_plugin ) {
-        $settings_link = '<a href="' . get_bloginfo( 'wpurl' ) . '/wp-admin/options-general.php?page=aadmy-settings">Shortcodes List</a>';
-        array_unshift( $links, $settings_link );
-    }
-    return $links;
-}
+ // Settings Link ight Next to deactive Link
+ add_filter('plugin_action_links', 'custom_plugin_settings_link_aadmy', 10, 2);
+ function custom_plugin_settings_link_aadmy($links, $file)
+ {
+   static $this_plugin;
+   if (!$this_plugin) $this_plugin = plugin_basename(__FILE__);
+
+   if ($file == $this_plugin) {
+     $settings_link = '<a href="' . get_bloginfo('wpurl') . '/wp-admin/options-general.php?page=aadmy-settings">Shortcodes List</a>';
+     array_unshift($links, $settings_link);
+   }
+   return $links;
+ }
