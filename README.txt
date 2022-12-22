@@ -35,6 +35,9 @@ Other Shortcodes
 Call Shortcodes with in php
 * Use this: echo do_shortcode('[shortcode_name]');
 
+#### Compatibility
+* This plugin is compatible with WordPress versions 4.7 and higher, as well as with any WordPress theme.
+
 == Installation ==
 
 * Download the plugin file. The plugin file will usually be in the form of a .zip file.
