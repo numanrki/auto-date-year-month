@@ -3,7 +3,7 @@
  * Plugin Name: (AADMY) Add Auto Date Month Year In Posts Dynamically
  * Plugin URI: https://wordpress.org/plugins/auto-date-year-month/
  * Description: This WordPress plugin allows you to dynamically add current dates, years, months, and other time-related elements to your content. It helps to keep your content up-to-date and improve your SEO thus ensuring that your website's content is always fresh and relevant. With this plugin, you can easily add dynamic current time elements to your website without any coding knowledge.
- * Version: 1.0.3
+ * Version: 1.0.4
  * Requires at least: 4.7
  * Tested up to: 6.0
  * Author: Numan Rasheed
@@ -58,7 +58,7 @@ if ( ! function_exists( 'aadmyipd_fs' ) ) {
   do_action( 'aadmyipd_fs_loaded' );
 }
 
-define( 'Auto_Date_Year_Month_AADMY', '1.0.3' );
+define( 'Auto_Date_Year_Month_AADMY', '1.0.4' );
 
 //Other Functions to process
 require 'other-functions.php';
@@ -146,6 +146,7 @@ function get_prev_month_aadmy() {
 add_shortcode( 'p_month', 'get_prev_month_aadmy' );
 
 
+
 // Also Work with WP Basic elements, Like Titles, Post Title, Expcerts
 add_filter( 'the_title', 'do_shortcode' );
 add_filter( 'single_post_title', 'do_shortcode' );
@@ -153,6 +154,26 @@ add_filter( 'wp_title', 'do_shortcode' );
 add_filter('the_excerpt', 'do_shortcode');
 add_filter('widget_text', 'do_shortcode');
 add_action('wp_footer', 'do_shortcode');
+
+// SEO Plugins Additions 
+// Filter Added for SEOPress Plugin 
+add_filter( 'seopress_titles_title', 'do_shortcode');
+add_filter( 'seopress_titles_desc', 'do_shortcode');
+
+// Filter Added for Yoast SEO Plugin
+add_filter( 'wpseo_title', 'do_shortcode' );
+add_filter( 'wpseo_metadesc', 'do_shortcode' );
+
+// Filter Added For Rank Math SEO Plugin
+function process_shortcodes_in_rank_math_title($title) {
+  return do_shortcode($title);
+}
+add_filter('rank_math/frontend/title', 'process_shortcodes_in_rank_math_title');
+
+function process_shortcodes_in_rank_math_description($description) {
+  return do_shortcode($description);
+}
+add_filter('rank_math/frontend/description', 'process_shortcodes_in_rank_math_description');
 
 include 'aadmy-menu.php';
 

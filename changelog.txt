@@ -24,3 +24,10 @@ Bugs Fixed and New Shortcodes Added:December 23, 2022
 * Bugs Fixed
 * New shortcodes added
 * Welcome Page Added
+
+= 1.0.4 =
+Bugs Fixed and New Shortcodes Added: January 05, 2023
+
+* Bugs Fixed
+* New shortcodes added
+* SEO Plugins Support Added SEOPress/RankMath/YoastSEO
