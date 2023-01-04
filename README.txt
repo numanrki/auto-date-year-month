@@ -1,12 +1,12 @@
 === (AADMY) Add Auto Date Month Year In Posts Dynamically ===
 Contributors: numanrki
-Tags: current year, previous year, next year, dynamic year, auto date,dynamic date, auto dates in posts
+Tags: SEO, current year, previous year, next year, dynamic year, auto date,dynamic date, auto dates in posts
 Author URI: https://wordpress.org/plugins/auto-date-year-month/
 Author: https://numanrki.com
 Donate link: https://bit.ly/aadmyDonation
 Requires at least: 4.7
 Tested up to: 6.0
-Stable tag: 1.0.3
+Stable tag: 1.0.4
 Requires PHP: 7.0
 License: GPL2
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
@@ -19,9 +19,9 @@ This WordPress plugin allows you to dynamically add current dates, years, months
 
 This plugin adds the following short codes to your WordPress site:
 
-* **[c_year]** - Stands For [Current Year] This would output the current year, the previous year, and the next year in the post, like this: (e.g. 2022)
-* **[p_year]** - Stands For [Previous Year] Outputs the previous year (e.g. 2021)
-* **[n_year]** - Stands For [Next Year] Outputs the next year (e.g. 2023)
+* **[c_year]** - Stands For [Current Year] This would output the current year, the previous year, and the next year in the post, like this: (e.g. 2023)
+* **[p_year]** - Stands For [Previous Year] Outputs the previous year (e.g. 2022)
+* **[n_year]** - Stands For [Next Year] Outputs the next year (e.g. 2024)
 * **[c_month]** - Stands For [Current Month] Outputs the Current Month (e.g. December)
 * **[today]** - Stands For [Today Full Date] Outputs the Full Date, month and year  (e.g. November 09, 1994)
 * **[c_day]** - Stands For [Current Day] Outputs the Current Day  (e.g. Monday)
@@ -35,7 +35,7 @@ Other Shortcodes
 * **[post_modified]** - This will output the update date of the post or page where the shortcode is placed.
 
 Call Shortcodes with in php
-* Use this: echo do_shortcode('[shortcode_name]');
+* Use this: **echo do_shortcode('[shortcode_name]');**
 
 Compatibility
 * This plugin is compatible with WordPress versions 4.7 and higher, as well as with any WordPress theme.
@@ -118,3 +118,10 @@ Bugs Fixed and New Shortcodes Added:December 23, 2022
 * Bugs Fixed
 * New shortcodes added
 * Welcome Page Added
+
+= 1.0.4 =
+Bugs Fixed and New Shortcodes Added: January 05, 2023
+
+* Bugs Fixed
+* New shortcodes added
+* SEO Plugins Support Added SEOPress/RankMath/YoastSEO
