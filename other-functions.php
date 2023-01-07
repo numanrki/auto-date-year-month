@@ -23,6 +23,7 @@ function copyright_symbol_shortcode_aadmy() {
   }
   add_shortcode('copy', 'copy_symbol_shortcode_aadmy');
 
+
 // Modified date of Posts/Pages
 function modified_date_shortcode_aadmy() {
   global $post;
@@ -30,7 +31,20 @@ function modified_date_shortcode_aadmy() {
   $modified_date = get_the_modified_date();
   return $modified_date;
 }
-add_shortcode('post_modified', 'modified_date_shortcode_aadmy'); 
+add_shortcode('post_modified', 'modified_date_shortcode_aadmy');
 
 
+// Calculate the difference between the provided DOB and current date
+function get_current_age_aadmy($atts) {
+  $atts = shortcode_atts(array(
+    'dob' => ''
+  ), $atts);
 
+  $dob = $atts['dob'];
+
+  // Calculate the difference between the provided DOB and current date
+  $diff = date_diff(date_create($dob), date_create('now'));
+  // Return the number of years
+  return $diff->format('%y Years');
+}
+add_shortcode('age', 'get_current_age_aadmy');

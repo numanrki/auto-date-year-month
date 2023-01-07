@@ -33,6 +33,11 @@ Other Shortcodes
 * **[copy]** - Stands For [Just Copyrights Symbol] Outputs the © Symbol if user want show this symbol anywhere in where installed this plugin
 * **[s_title]** - Stands For [Site Title] Outputs the Site URL with anchoring the Site Name 
 * **[post_modified]** - This will output the update date of the post or page where the shortcode is placed.
+* **[age dob="mm/dd/yyyy"]** With this code, you can use the shortcode [age dob="11/09/1994"] in your WordPress content to output the current age based on the provided date of birth.
+* **Note:** Make sure to replace **'11/09/1994'** with the actual date of birth that you want to use.
+
+
+
 
 Call Shortcodes with in php
 * Use this: **echo do_shortcode('[shortcode_name]');**
@@ -125,3 +130,10 @@ Bugs Fixed and New Shortcodes Added: January 05, 2023
 * Bugs Fixed
 * New shortcodes added
 * SEO Plugins Support Added SEOPress/RankMath/YoastSEO
+
+= 1.0.5 =
+Bugs Fixed and New Shortcodes Added: January 08, 2023
+
+* Bugs Fixed
+* Age Calculator Added use shortcode to calculate The total age
+* Last Modified Date Schema Added
