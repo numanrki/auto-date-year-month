@@ -51,7 +51,6 @@ add_shortcode('age', 'get_current_age_aadmy');
 
 
 // Define the function of Custom event Happned years/months/days ago
-
 function aadmy_event_time_elapsed($event_date) {
   $event_date = strtotime($event_date);
   $current_time = time();
