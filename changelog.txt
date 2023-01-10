@@ -36,5 +36,5 @@ Bugs Fixed and New Shortcodes Added: January 05, 2023
 Bugs Fixed and New Shortcodes Added: January 08, 2023
 
 * Bugs Fixed
-* Age Calculator Added use shortcode to calculate The total age using shortcode
-* Last Modified Date Schema Added
+* Age Calculator Added use shortcode to calculate The total age
+* Custom period function added (combined) A duration of years, months, or days can be referred to using this short code.
