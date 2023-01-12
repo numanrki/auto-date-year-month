@@ -50,23 +50,18 @@ function get_current_age_aadmy($atts) {
 add_shortcode('age', 'get_current_age_aadmy');
 
 
-// Define the function of Custom event Happned years/months/days ago
+// // Define the function of Custom event Happned years/months/days ago
 function aadmy_event_time_elapsed($event_date) {
-  $event_date = strtotime($event_date);
-  $current_time = time();
-  $time_elapsed = $current_time - $event_date;
-  $days_elapsed = floor($time_elapsed / 86400);
-  $months_elapsed = floor($days_elapsed / 30);
-  $years_elapsed = floor($months_elapsed / 12);
-  $remaining_days = $days_elapsed % 30;
-  $remaining_months = $months_elapsed % 12;
+  $event_date = DateTime::createFromFormat('m/d/Y', $event_date);
+  $current_time = new DateTime();
+  $interval = $current_time->diff($event_date);
 
-  if ($years_elapsed > 0) {
-      return "$years_elapsed years, $remaining_months months, and $remaining_days days ago";
-  } elseif ($months_elapsed > 0) {
-      return "$months_elapsed months, and $remaining_days days ago";
+  if ($interval->y > 0) {
+      return "{$interval->y} years, {$interval->m} months, and {$interval->d} days ago";
+  } elseif ($interval->m > 0) {
+      return "{$interval->m} months, and {$interval->d} days ago";
   } else {
-      return "$days_elapsed days ago";
+      return "{$interval->d} days ago";
   }
 }
 
@@ -77,7 +72,11 @@ function aadmy_event_time_elapsed_shortcode($atts) {
 
   return aadmy_event_time_elapsed($atts['date']);
 }
+
 add_shortcode('aadmy_event', 'aadmy_event_time_elapsed_shortcode');
+
+// Calling Shortcode
+// [aadmy_event date="04/12/2021"]
 
 // Calling Shortcode
 // [aadmy_event date="04/12/2021"]
