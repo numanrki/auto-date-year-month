@@ -24,24 +24,16 @@ function copyright_symbol_shortcode_aadmy() {
   add_shortcode('copy', 'copy_symbol_shortcode_aadmy');
 
 
-// Modified date of Posts/Pages
-function modified_date_shortcode_aadmy() {
-  global $post;
-  setup_postdata( $post );
-  $modified_date = get_the_modified_date();
-  return $modified_date;
-}
-add_shortcode('post_modified', 'modified_date_shortcode_aadmy');
 
-// Modified date with time of Posts/Pages
-function modified_date_time_shortcode_aadmy() {
+// Modified date with tine of Posts/Pages
+function modified_date_shortcode_aadmy() {
   global $post;
   setup_postdata( $post );
   $modified_date = get_the_modified_date();
   $modified_time = get_the_modified_time();
   return $modified_date . ' at ' . $modified_time;
 }
-add_shortcode('post_date_time', 'modified_date_time_shortcode_aadmy');
+add_shortcode('post_modified', 'modified_date_shortcode_aadmy');
 
 
 // Calculate the difference between the provided DOB and current date
