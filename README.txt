@@ -35,7 +35,7 @@ Other Shortcodes
 * **[post_modified]** - This will output the update date of the post or page where the shortcode is placed.
 * **[age dob="mm/dd/yyyy"]** With this code, you can use the shortcode [age dob="11/09/1994"] in your WordPress content to output the current age based on the provided date of birth.
 * **Note:** Make sure to replace **'11/09/1994'** with the actual date of birth that you want to use.
-* *[aadmy_event date="mm/dd/yyyy"]*  A numbers of years can be referred to using this short code. like **[aadmy_event date="04/12/2021"]** outputs the 1 years, 9 months, and 8 days ago
+* **[aadmy_event date="mm/dd/yyyy"]**  A numbers of years can be referred to using this short code. like **[aadmy_event date="04/12/2021"]** outputs the 1 years, 9 months, and 8 days ago
 
 
 
