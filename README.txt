@@ -23,8 +23,8 @@ This plugin adds the following short codes to your WordPress site:
 * **[py]** - Stands For [Previous Year] Outputs the previous year (e.g. 2022)
 * **[ny]** - Stands For [Next Year] Outputs the next year (e.g. 2024)
 * **[today]** - Stands For [Today Full Date] Outputs the Full Date, month and year  (e.g. November 09, 1994)
-* **[cd]** - Stands For [Current Day] Outputs the Current Day  (e.g. 27)
-* **[td]** - Stands For [Today] Outputs the Current Day  (e.g. Monday)
+* **[cd]** - Stands For [Current Date] Outputs the Current Day  (e.g. 27)
+* **[day]** - Stands For [day] Outputs the Current Day  (e.g. Monday)
 * **[cm]** - Stands For [Current Month] Outputs the Current Month (e.g. December)
 * **[nm]** - Stands For [Next Month] Outputs the name of next month  (e.g. This month is December when you use given shortcode output must be January)
 * **[pm]** - Stands For [Previous Month] Outputs the name of previous month  (e.g. This month is December when you use given shortcode output must be November)
@@ -143,7 +143,7 @@ Bugs Fixed and New Shortcodes Added: January 10, 2023
 * Custom period function added (combined) A duration of years, months, or days can be referred to using this short code.
 
 = 1.0.6 =
-Bugs Fixed and Shortcodes Chnaged: January 27, 2023
+Bugs Fixed and Shortcodes Changed: January 27, 2023
 
 * Bugs Fixed
 * All Shortcode changed long to short for handle characters issues
