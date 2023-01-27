@@ -6,7 +6,7 @@ Author: https://numanrki.com
 Donate link: https://bit.ly/aadmyDonation
 Requires at least: 4.7
 Tested up to: 6.0
-Stable tag: 1.0.5
+Stable tag: 1.0.6
 Requires PHP: 7.0
 License: GPL2
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
@@ -19,19 +19,20 @@ This WordPress plugin allows you to dynamically add current dates, years, months
 
 This plugin adds the following short codes to your WordPress site:
 
-* **[c_year]** - Stands For [Current Year] This would output the current year, the previous year, and the next year in the post, like this: (e.g. 2023)
-* **[p_year]** - Stands For [Previous Year] Outputs the previous year (e.g. 2022)
-* **[n_year]** - Stands For [Next Year] Outputs the next year (e.g. 2024)
-* **[c_month]** - Stands For [Current Month] Outputs the Current Month (e.g. December)
+* **[cy]** - Stands For [Current Year] This would output the current year, the previous year, and the next year in the post, like this: (e.g. 2023)
+* **[py]** - Stands For [Previous Year] Outputs the previous year (e.g. 2022)
+* **[ny]** - Stands For [Next Year] Outputs the next year (e.g. 2024)
 * **[today]** - Stands For [Today Full Date] Outputs the Full Date, month and year  (e.g. November 09, 1994)
-* **[c_day]** - Stands For [Current Day] Outputs the Current Day  (e.g. Monday)
-* **[n_month]** - Stands For [Next Month] Outputs the name of next month  (e.g. This month is December when you use given shortcode output must be January)
-* **[p_month]** - Stands For [Previous Month] Outputs the name of previous month  (e.g. This month is December when you use given shortcode output must be November)
+* **[cd]** - Stands For [Current Day] Outputs the Current Day  (e.g. 27)
+* **[td]** - Stands For [Today] Outputs the Current Day  (e.g. Monday)
+* **[cm]** - Stands For [Current Month] Outputs the Current Month (e.g. December)
+* **[nm]** - Stands For [Next Month] Outputs the name of next month  (e.g. This month is December when you use given shortcode output must be January)
+* **[pm]** - Stands For [Previous Month] Outputs the name of previous month  (e.g. This month is December when you use given shortcode output must be November)
 
 Other Shortcodes
-* **[f_copyrights]** - Stands For [Full Copyrights] Outputs the Footer Copyrights with (All Rights Reserved) text.
+* **[fcr]** - Stands For [Full Copyrights] Outputs the Footer Copyrights with (All Rights Reserved) text.
 * **[copy]** - Stands For [Just Copyrights Symbol] Outputs the © Symbol if user want show this symbol anywhere in where installed this plugin
-* **[s_title]** - Stands For [Site Title] Outputs the Site URL with anchoring the Site Name 
+* **[st]** - Stands For [Site Title] Outputs the Site URL with anchoring the Site Name 
 * **[post_modified]** - This will output the update date of the post or page where the shortcode is placed.
 * **[age dob="mm/dd/yyyy"]** With this code, you can use the shortcode [age dob="11/09/1994"] in your WordPress content to output the current age based on the provided date of birth.
 * **Note:** Make sure to replace **'11/09/1994'** with the actual date of birth that you want to use.
@@ -44,6 +45,9 @@ Call Shortcodes with in php
 
 Compatibility
 * This plugin is compatible with WordPress versions 4.7 and higher, as well as with any WordPress theme.
+
+==Full Guide==
+* For more information and usage examples, you can visit our [plugin page](https://numanrki.com/aadmy-add-auto-date-month-year.html).
 
 == Installation ==
 
@@ -137,3 +141,9 @@ Bugs Fixed and New Shortcodes Added: January 10, 2023
 * Bugs Fixed
 * Age Calculator Added use shortcode to calculate The total age
 * Custom period function added (combined) A duration of years, months, or days can be referred to using this short code.
+
+= 1.0.6 =
+Bugs Fixed and Shortcodes Chnaged: January 27, 2023
+
+* Bugs Fixed
+* All Shortcode changed long to short for handle characters issues

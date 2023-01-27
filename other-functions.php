@@ -7,15 +7,15 @@ function shortcode_get_domain_name_aadmy()
     $site_name = get_bloginfo('name');
     return '<a href="' . $site_url . '">' . $site_name . '</a>';
 }
-add_shortcode('s_title', 'shortcode_get_domain_name_aadmy');
+add_shortcode('st', 'shortcode_get_domain_name_aadmy');
 
 
 // Add Copy Rights 
 function copyright_symbol_shortcode_aadmy() {
   $copy_year = date('Y');
-  return '&copy; ' . $copy_year . ' ' . do_shortcode('[s_title]') . ' All Rights Reserved.';
+  return '&copy; ' . $copy_year . ' ' . do_shortcode('[st]') . ' All Rights Reserved.';
 }
-  add_shortcode('f_copyrights', 'copyright_symbol_shortcode_aadmy');
+  add_shortcode('fcr', 'copyright_symbol_shortcode_aadmy');
 
   // Add Copy Rights Symbol
   function copy_symbol_shortcode_aadmy() {

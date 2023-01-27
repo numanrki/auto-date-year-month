@@ -98,43 +98,43 @@ td {
   </thead>
   <tr>
     <td>Current Year</td>
-    <td><?php echo do_shortcode('[c_year]'); ?></td>
-    <td><b>[c_year]</b></td>
+    <td><?php echo do_shortcode('[cy]'); ?></td>
+    <td><b>[cy]</b></td>
   </tr>
   <tr>
   <td>Previous Year</td>
-    <td><?php echo do_shortcode('[p_year]'); ?></td>
-    <td><b>[p_year]</b></td>
+    <td><?php echo do_shortcode('[py]'); ?></td>
+    <td><b>[py]</b></td>
   </tr>
   <tr>
     <td>Next Year</td>
-    <td><?php echo do_shortcode('[n_year]'); ?></td>
-    <td><b>[n_year]</b></td>
+    <td><?php echo do_shortcode('[ny]'); ?></td>
+    <td><b>[ny]</b></td>
   </tr>
   <tr>
     <td>Current Day</td>
-    <td><?php echo do_shortcode('[c_day]'); ?></td>
-    <td><b>[c_day]</b></td>
+    <td><?php echo do_shortcode('[day]'); ?></td>
+    <td><b>[day]</b></td>
   </tr>
   <tr>
     <td>Current Date</td>
-    <td><?php echo do_shortcode('[c_date]'); ?></td>
-    <td><b>[c_date]</b></td>
+    <td><?php echo do_shortcode('[cd]'); ?></td>
+    <td><b>[cd]</b></td>
   </tr>
   <tr>
     <td>Current Month</td>
-    <td><?php echo do_shortcode('[c_month]'); ?></td>
-    <td><b>[c_month]</b></td>
+    <td><?php echo do_shortcode('[cm]'); ?></td>
+    <td><b>[cm]</b></td>
   </tr>
   <tr>
     <td>Previous Month</td>
-    <td><?php echo do_shortcode('[p_month]'); ?></td>
-    <td><b>[p_month]</b></td>
+    <td><?php echo do_shortcode('[pm]'); ?></td>
+    <td><b>[pm]</b></td>
   </tr>
   <tr>
     <td>Next Month</td>
-    <td><?php echo do_shortcode('[n_month]'); ?></td>
-    <td><b>[n_month]</b></td>
+    <td><?php echo do_shortcode('[nm]'); ?></td>
+    <td><b>[nm]</b></td>
   </tr>
   <tr>
     <td>Full Date</td>
