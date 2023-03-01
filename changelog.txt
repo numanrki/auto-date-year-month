@@ -44,3 +44,9 @@ Bugs Fixed and Shortcodes Changed: January 27, 2023
 
 * Bugs Fixed
 * All Shortcode changed long to short for handle characters issues
+
+= 1.0.7 =
+Bugs Fixed and New Shortcodes Added: February 01, 2023
+
+* Bugs Fixed
+* New Shortcode for Copy Pasting Added

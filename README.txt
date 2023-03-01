@@ -5,7 +5,7 @@ Author URI: https://wordpress.org/plugins/auto-date-year-month/
 Author: https://numanrki.com
 Donate link: https://bit.ly/aadmyDonation
 Requires at least: 4.7
-Tested up to: 6.0
+Tested up to: 6.1.1
 Stable tag: 1.0.6
 Requires PHP: 7.0
 License: GPL2
@@ -147,3 +147,9 @@ Bugs Fixed and Shortcodes Changed: January 27, 2023
 
 * Bugs Fixed
 * All Shortcode changed long to short for handle characters issues
+
+= 1.0.7 =
+Bugs Fixed and New Shortcodes Added: February 01, 2023
+
+* Bugs Fixed
+* New Shortcode for Copy Pasting Added
