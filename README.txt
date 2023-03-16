@@ -6,7 +6,7 @@ Author: https://numanrki.com
 Donate link: https://bit.ly/aadmyDonation
 Requires at least: 4.7
 Tested up to: 6.1.1
-Stable tag: 1.0.6
+Stable tag: 1.0.7
 Requires PHP: 7.0
 License: GPL2
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
@@ -29,7 +29,7 @@ This plugin adds the following short codes to your WordPress site:
 * **[nm]** - Stands For [Next Month] Outputs the name of next month  (e.g. This month is December when you use given shortcode output must be January)
 * **[pm]** - Stands For [Previous Month] Outputs the name of previous month  (e.g. This month is December when you use given shortcode output must be November)
 
-Other Shortcodes
+== Other Shortcodes ==
 * **[fcr]** - Stands For [Full Copyrights] Outputs the Footer Copyrights with (All Rights Reserved) text.
 * **[copy]** - Stands For [Just Copyrights Symbol] Outputs the © Symbol if user want show this symbol anywhere in where installed this plugin
 * **[st]** - Stands For [Site Title] Outputs the Site URL with anchoring the Site Name 
@@ -37,8 +37,19 @@ Other Shortcodes
 * **[age dob="mm/dd/yyyy"]** With this code, you can use the shortcode [age dob="11/09/1994"] in your WordPress content to output the current age based on the provided date of birth.
 * **Note:** Make sure to replace **'11/09/1994'** with the actual date of birth that you want to use.
 * **[aadmy_event date="mm/dd/yyyy"]**  A numbers of years can be referred to using this short code. like **[aadmy_event date="04/12/2021"]** outputs the 1 years, 9 months, and 8 days ago
+* Setting Shortcodes for Copy
+* **[copy name="copy1" value="AADMY Auto Plugin"]** (You can set your own value within the **name=" "** attribute. i used copy1)
+* Pasting the Copy shortcode value Here
+* **[paste name="copy1"]**
+* Similarly, you can create and use additional copy and paste shortcodes with unique names to store and retrieve other values as needed.
 
+* This code is showing you how to create shortcodes for copying and pasting specific values.
 
+*To set a value to be copied, you would use the shortcode **[copy]** and include a name and value attribute, like this: **[copy name="copy1" value="AADMY Auto Plugin"]***
+
+*Then, when you want to paste that value somewhere else, you would use the shortcode **[paste]** and include the name attribute, like this: **[paste name="copy1"]**
+
+*You can create and use additional copy and paste shortcodes with unique names to store and retrieve other values as needed.
 
 Call Shortcodes with in php
 * Use this: **echo do_shortcode('[shortcode_name]');**
@@ -149,7 +160,7 @@ Bugs Fixed and Shortcodes Changed: January 27, 2023
 * All Shortcode changed long to short for handle characters issues
 
 = 1.0.7 =
-Bugs Fixed and New Shortcodes Added: February 01, 2023
+Bugs Fixed and New Shortcodes Added: March  16, 2023
 
 * Bugs Fixed
 * New Shortcode for Copy Pasting Added
