@@ -45,7 +45,7 @@ This plugin adds the following short codes to your WordPress site:
 
 * This code is showing you how to create shortcodes for copying and pasting specific values.
 
-* To set a value to be copied, you would use the shortcode **[copy]** and include a name and value attribute, like this: **[copy name="copy1" value="AADMY Auto Plugin"]***
+* To set a value to be copied, you would use the shortcode **[copy]** and include a name and value attribute, like this: **[copy name="copy1" value="AADMY Auto Plugin"]**
 
 * Then, when you want to paste that value somewhere else, you would use the shortcode **[paste]** and include the name attribute, like this: **[paste name="copy1"]**
 
