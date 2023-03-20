@@ -44,9 +44,12 @@ function get_current_age_aadmy($atts) {
 
   $dob = $atts['dob'];
 
+  // Convert the input date to the correct format (mm/dd/yyyy)
+  $dob_formatted = date("m/d/Y", strtotime($dob));
+
   // Calculate the difference between the provided DOB and current date
-  $age = date('Y') - date('Y', strtotime($dob));
-  if (date('md') < date('md', strtotime($dob))) {
+  $age = date('Y') - date('Y', strtotime($dob_formatted));
+  if (date('md') < date('md', strtotime($dob_formatted))) {
     $age--;
   }
   
@@ -54,6 +57,7 @@ function get_current_age_aadmy($atts) {
   return $age . " Years";
 }
 add_shortcode('age', 'get_current_age_aadmy');
+
 
 
 // // Define the function of Custom event Happned years/months/days ago
