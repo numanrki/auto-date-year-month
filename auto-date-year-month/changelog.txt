@@ -50,3 +50,8 @@ Bugs Fixed and New Shortcodes Added: March 16, 2023
 
 * Bugs Fixed
 * New Shortcode for Copy Pasting Added
+
+= 1.0.8 =
+Bugs Fixed and New Shortcodes Added: March  20, 2023
+
+* Bugs Fixed

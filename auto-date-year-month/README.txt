@@ -6,7 +6,7 @@ Author: https://numanrki.com
 Donate link: https://bit.ly/aadmyDonation
 Requires at least: 4.7
 Tested up to: 6.1.1
-Stable tag: 1.0.7
+Stable tag: 1.0.8
 Requires PHP: 7.0
 License: GPL2
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
@@ -164,3 +164,8 @@ Bugs Fixed and New Shortcodes Added: March  16, 2023
 
 * Bugs Fixed
 * New Shortcode for Copy Pasting Added
+
+= 1.0.8 =
+Bugs Fixed and New Shortcodes Added: March  20, 2023
+
+* Bugs Fixed

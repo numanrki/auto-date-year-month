@@ -45,9 +45,13 @@ function get_current_age_aadmy($atts) {
   $dob = $atts['dob'];
 
   // Calculate the difference between the provided DOB and current date
-  $diff = date_diff(date_create($dob), date_create('now'));
+  $age = date('Y') - date('Y', strtotime($dob));
+  if (date('md') < date('md', strtotime($dob))) {
+    $age--;
+  }
+  
   // Return the number of years
-  return $diff->format('%y Years');
+  return $age . " Years";
 }
 add_shortcode('age', 'get_current_age_aadmy');
 
@@ -88,35 +92,34 @@ add_shortcode('aadmy_event', 'aadmy_event_time_elapsed_shortcode');
 // @param array $atts An array of attributes passed to the shortcode.
 // @param string $content The content within the shortcode.
 // @return string An empty string for the 'copy' shortcode and the saved value for the 'paste' shortcode.
+  // Define the copy shortcode
+  function copy_shortcode_aadmy($atts, $content = null) {
+      extract(shortcode_atts(array(
+          'name' => '',
+          'value' => '',
+      ), $atts));
+      
+      // Save the value to a session variable with the given name
+      $_SESSION[$name] = $value;
+      
+      // Return an empty string
+      return '';
+  }
+  add_shortcode('copy', 'copy_shortcode_aadmy');
 
-// Define the copy shortcode
-function copy_shortcode_aadmy($atts, $content = null) {
-  extract(shortcode_atts(array(
-      'name' => '',
-      'value' => '',
-  ), $atts));
-  
-  // Save the value to a session variable with the given name
-  $_SESSION[$name] = $value;
-  
-  // Return an empty string
-  return '';
-}
-add_shortcode('copy', 'copy_shortcode_aadmy');
-
-// Define the paste shortcode
-function paste_shortcode_aadmy($atts, $content = null) {
-  extract(shortcode_atts(array(
-      'name' => '',
-  ), $atts));
-  
-  // Retrieve the value from the session variable with the given name
-  $value = $_SESSION[$name];
-  
-  // Return the value
-  return $value;
-}
-add_shortcode('paste', 'paste_shortcode_aadmy');
+  // Define the paste shortcode
+  function paste_shortcode_aadmy($atts, $content = null) {
+      extract(shortcode_atts(array(
+          'name' => '',
+      ), $atts));
+      
+      // Retrieve the value from the session variable with the given name
+      $value = isset($_SESSION[$name]) ? $_SESSION[$name] : '';
+      
+      // Return the value
+      return $value;
+  }
+  add_shortcode('paste', 'paste_shortcode_aadmy');
 
 // Setting Shortcodes for Copy
 // [copy name="copy1" value="AADMY Auto Plugin"]
