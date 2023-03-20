@@ -3,7 +3,7 @@ Contributors: numanrki
 Tags: SEO, current year, previous year, next year, dynamic year, auto date,dynamic date, auto dates in posts
 Author URI: https://wordpress.org/plugins/auto-date-year-month/
 Author: https://numanrki.com
-Donate link: https://bit.ly/aadmyDonation
+Donate link: https://bit.ly/aadmyCoffee
 Requires at least: 4.7
 Tested up to: 6.1.1
 Stable tag: 1.0.8
