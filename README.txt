@@ -170,8 +170,8 @@ Bugs Fixed and New Shortcodes Added: March  20, 2023
 
 * Bugs Fixed
 
-= 1.0.8 =
-Bugs Fixed and New Shortcodes Added: March  20, 2023
+= 1.0.9 =
+Bugs Fixed and New Shortcodes Added: March  28, 2023
 
 * Bugs Fixed
 * Main File Renamed
