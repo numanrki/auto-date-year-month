@@ -1,4 +1,4 @@
-=== (AADMY) Add Auto Date Month Year In Posts Dynamically ===
+=== AADMY - Add Auto Date Month Year Into Posts ===
 Contributors: numanrki
 Tags: SEO, current year, previous year, next year, dynamic year, auto date,dynamic date, auto dates in posts
 Author URI: https://wordpress.org/plugins/auto-date-year-month/
@@ -6,7 +6,7 @@ Author: https://numanrki.com
 Donate link: https://bit.ly/aadmyCoffee
 Requires at least: 4.7
 Tested up to: 6.1.1
-Stable tag: 1.0.8
+Stable tag: 1.0.9
 Requires PHP: 7.0
 License: GPL2
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
@@ -169,3 +169,11 @@ Bugs Fixed and New Shortcodes Added: March  16, 2023
 Bugs Fixed and New Shortcodes Added: March  20, 2023
 
 * Bugs Fixed
+
+= 1.0.8 =
+Bugs Fixed and New Shortcodes Added: March  20, 2023
+
+* Bugs Fixed
+* Main File Renamed
+* Plugin Renamed
+* Plugin Description Edited
