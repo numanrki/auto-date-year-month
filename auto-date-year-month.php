@@ -5,7 +5,7 @@
  * Description: This WordPress plugin allows you to dynamically add current dates, years, months, and other time-related elements to your content.
  * Version: 1.0.9
  * Requires at least: 4.7
- * Tested up to: 6.1.1
+ * Tested up to: 6.2
  * Author: Numan Rasheed
  * Author URI: https://www.numanrki.com
  * License: GPL2
