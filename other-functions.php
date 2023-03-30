@@ -127,7 +127,10 @@ function paste_shortcode_aadmy($atts, $content = null) {
     // Return the value
     return $value;
 }
+
 add_shortcode('paste', 'paste_shortcode_aadmy');
+// Close the session
+session_write_close();
 
 // Setting Shortcodes for Copy
 // [copy name="copy1" value="AADMY Auto Plugin"]
