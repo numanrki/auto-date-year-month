@@ -63,3 +63,4 @@ Bugs Fixed and New Shortcodes Added: March  28, 2023
 * Main File Renamed
 * Plugin Renamed
 * Plugin Description Edited
+* Session Removed from Copy/Paste
