@@ -97,9 +97,6 @@ add_shortcode('aadmy_event', 'aadmy_event_time_elapsed_shortcode');
 // @param string $content The content within the shortcode.
 // @return string An empty string for the 'copy' shortcode and the saved value for the 'paste' shortcode.
 
-// Start the session
-session_start();
-
 // Define the copy shortcode
 function copy_shortcode_aadmy($atts, $content = null) {
     extract(shortcode_atts(array(
@@ -129,8 +126,6 @@ function paste_shortcode_aadmy($atts, $content = null) {
 }
 
 add_shortcode('paste', 'paste_shortcode_aadmy');
-// Close the session
-session_write_close();
 
 // Setting Shortcodes for Copy
 // [copy name="copy1" value="AADMY Auto Plugin"]
