@@ -57,10 +57,11 @@ Bugs Fixed and New Shortcodes Added: March  20, 2023
 * Bugs Fixed
 
 = 1.0.9 =
-Bugs Fixed and New Shortcodes Added: March  28, 2023
+Bugs Fixed and Major Chnages Added: April  02, 2023
 
 * Bugs Fixed
 * Main File Renamed
 * Plugin Renamed
 * Plugin Description Edited
 * Session Removed from Copy/Paste
+* Freemius SDK updated to v2.5.6

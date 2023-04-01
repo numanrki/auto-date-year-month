@@ -6,7 +6,7 @@ Author: https://numanrki.com
 Donate link: https://bit.ly/aadmyCoffee
 Requires at least: 4.7
 Tested up to: 6.2
-Stable tag: 1.1.0
+Stable tag: 1.0.9
 Requires PHP: 7.0
 License: GPL2
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
@@ -171,10 +171,11 @@ Bugs Fixed and New Shortcodes Added: March  20, 2023
 * Bugs Fixed
 
 = 1.0.9 =
-Bugs Fixed and New Shortcodes Added: March  28, 2023
+Bugs Fixed and Major Chnages Added: April  02, 2023
 
 * Bugs Fixed
 * Main File Renamed
 * Plugin Renamed
 * Plugin Description Edited
 * Session Removed from Copy/Paste
+* Freemius SDK updated to v2.5.6
