@@ -11,13 +11,9 @@ Requires PHP: 7.0
 License: GPL2
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
-
-This WordPress plugin allows you to dynamically add current dates, years, months, and other time-related elements to your content. It helps to keep your content up-to-date and improve your SEO thus ensuring that your website's content is always fresh and relevant. With this plugin, you can easily add dynamic current time elements to your website without any coding knowledge.
-
-
 == Description ==
-
-This plugin adds the following short codes to your WordPress site:
+This WordPress plugin allows you to dynamically add current dates, years, months, and other time-related elements to your content. It helps to keep your content up-to-date and improve your SEO thus ensuring that your website's content is always fresh and relevant. With this plugin, you can easily add dynamic current time elements to your website without any coding knowledge.
+* This plugin adds the following short codes to your WordPress Blog/Site:
 
 * **[cy]** - Stands For [Current Year] This would output the current year, the previous year, and the next year in the post, like this: (e.g. 2023)
 * **[py]** - Stands For [Previous Year] Outputs the previous year (e.g. 2022)
@@ -51,14 +47,15 @@ This plugin adds the following short codes to your WordPress site:
 
 * You can create and use additional copy and paste shortcodes with unique names to store and retrieve other values as needed.
 
-Call Shortcodes with in php
+Call Shortcodes with PHP
 * Use this: **echo do_shortcode('[shortcode_name]');**
 
-Compatibility
+== Compatibility ==
 * This plugin is compatible with WordPress versions 4.7 and higher, as well as with any WordPress theme.
 
-==Full Guide==
+== Full Guide ==
 * For more information and usage examples, you can visit our [plugin page](https://numanrki.com/aadmy-add-auto-date-month-year.html).
+* If you have a problem with our plugin or have any questions, you can contact our support team by emailing salam@numanrki.com or by [visiting our support forum](https://wordpress.org/support/plugin/auto-date-year-month/). We will do our best to assist you and resolve any issues you may have.
 
 == Installation ==
 
@@ -110,8 +107,6 @@ To use a dynamic copyright year in WordPress, you can use the shortcode **[fcr]*
 To make your WordPress post dynamic, you can use the  [AADMY Plugin](https://wordpress.org/plugins/auto-date-year-month), which provides several dynamic shortcodes to display content dynamically. These shortcodes allow you to insert dynamic elements such as the current date, time, user information, and more. By using these shortcodes, you can make your WordPress post more engaging and personalized for your audience.
 = How do I add a date to my WordPress posts? =
 To add a date to your WordPress posts, you can use the shortcode [today], which displays the current date dynamically based on your timezone settings in WordPress. Simply insert this shortcode within your post where you want to display the date, and it will automatically update to show the current date whenever the post is viewed.
-
-* If you have a problem with our plugin or have any questions, you can contact our support team by emailing salam@numanrki.com or by [visiting our support forum](https://wordpress.org/support/plugin/auto-date-year-month/). We will do our best to assist you and resolve any issues you may have.
 
 
 == Screenshots ==
@@ -193,4 +188,5 @@ Bugs Fixed and Major Chnages Added: April  02, 2023
 Bugs Fixed and Minor Chnages Added: April  02, 2023
 
 * Bugs Fixed
+* README.txt Updated
 * FAQ Updated
