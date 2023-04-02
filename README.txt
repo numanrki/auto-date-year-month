@@ -6,7 +6,7 @@ Author: https://numanrki.com
 Donate link: https://bit.ly/aadmyCoffee
 Requires at least: 4.7
 Tested up to: 6.2
-Stable tag: 1.0.9
+Stable tag: 1.1.0
 Requires PHP: 7.0
 License: GPL2
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
@@ -95,12 +95,21 @@ Compatibility
 == Frequently Asked Questions ==
 
 = Can I display the current month or day using your plugin? =
-Yes, you can display the current month or day using the shortcodes [c_month] respectively. These shortcodes will automatically update to display the current month to the page is loaded.
+Yes, you can display the current month or day using the shortcodes **[cm]** respectively. These shortcodes will automatically update to display the current month to the page is loaded.
 = How do I add the shortcodes to my website? =
 To add the shortcodes to your website, simply insert them into the content of your page or post where you want them to be displayed. You can also add the shortcodes to your theme's template files if you want them to be displayed on multiple pages or posts.
 = Can I use your plugin to display the current time? =
 No, our plugin does not have a feature to display the current time. However, this feature will be available to use in future updates. 
-
+= How do I Add Current Year in WordPress? or How do I show year in WordPress? =
+To add the current year in WordPress, you can use the AADMY plugin and insert the **[cy]** shortcode in your posts or pages. The plugin will automatically display the current year.
+= How can I Display the last updated date on my WordPress Posts and Pages? =
+To display the last updated date on your WordPress posts and pages, you can use the shortcode **[post_modified]**. Simply add this shortcode to the desired location within your post or page, and the last modified date will be automatically displayed. This is a great way to let your visitors know when your content was last updated, which can help to build trust and credibility with your audience.
+= How can I use a dynamic copyright year in WordPress? =
+To use a dynamic copyright year in WordPress, you can use the shortcode **[fcr]**, which stands for "Full Copyrights Year." This shortcode will automatically display the current year in your copyright notice, so you don't have to manually update it each year. However, make sure that you have installed the AADMY plugin, which provides this functionality.
+= How can I make my WordPress post dynamic? =
+To make your WordPress post dynamic, you can use the  [AADMY Plugin](https://wordpress.org/plugins/auto-date-year-month), which provides several dynamic shortcodes to display content dynamically. These shortcodes allow you to insert dynamic elements such as the current date, time, user information, and more. By using these shortcodes, you can make your WordPress post more engaging and personalized for your audience.
+= How do I add a date to my WordPress posts? =
+To add a date to your WordPress posts, you can use the shortcode [today], which displays the current date dynamically based on your timezone settings in WordPress. Simply insert this shortcode within your post where you want to display the date, and it will automatically update to show the current date whenever the post is viewed.
 
 * If you have a problem with our plugin or have any questions, you can contact our support team by emailing salam@numanrki.com or by [visiting our support forum](https://wordpress.org/support/plugin/auto-date-year-month/). We will do our best to assist you and resolve any issues you may have.
 
@@ -179,3 +188,9 @@ Bugs Fixed and Major Chnages Added: April  02, 2023
 * Plugin Description Edited
 * Session Removed from Copy/Paste
 * Freemius SDK updated to v2.5.6
+
+= 1.1.0 =
+Bugs Fixed and Minor Chnages Added: April  02, 2023
+
+* Bugs Fixed
+* FAQ Updated
