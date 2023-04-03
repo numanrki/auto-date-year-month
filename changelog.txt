@@ -65,3 +65,11 @@ Bugs Fixed and Major Chnages Added: April  02, 2023
 * Plugin Description Edited
 * Session Removed from Copy/Paste
 * Freemius SDK updated to v2.5.6
+
+= 1.1.0 =
+Bugs Fixed and Minor Chnages Added: April  02, 2023
+
+* Bugs Fixed
+* README.txt Updated
+* FAQ Updated
+* Contributors Added

@@ -1,5 +1,5 @@
 === AADMY - Add Auto Date Month Year Into Posts ===
-Contributors: numanrki
+Contributors: numanrki, sallubhatti2, arslanrki
 Tags: SEO, current year, previous year, next year, dynamic year, auto date,dynamic date, auto dates in posts
 Author URI: https://wordpress.org/plugins/auto-date-year-month/
 Author: https://numanrki.com
@@ -190,3 +190,4 @@ Bugs Fixed and Minor Chnages Added: April  02, 2023
 * Bugs Fixed
 * README.txt Updated
 * FAQ Updated
+* Contributors Added
