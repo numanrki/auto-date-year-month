@@ -1,5 +1,5 @@
 body{
-    background-color: #ffffff;
+    background-color: white;
   }
       .welcome-page-wrap {
     width: 80%; /* Set the width of the welcome page to 80% */
@@ -8,12 +8,19 @@ body{
   }
   
   h1 {
-    text-align: center; /* Center the heading */
-    font-size: 2em; /* Set the font size to 2em */
-    margin: 20px 0; /* Add a margin of 20px at the top and bottom of the heading */
-    font-family: 'Roboto', sans-serif;
-    text-shadow: 2px 2px 2px rgba(0,0,0,0.5);
+    text-align: center;
+    font-size: 30px;
+    font-weight: bold;
+    color: #262484;
+    text-shadow: 2px 2px #FEDD04;
+    margin-top: 30px;
+    line-height: 1;
+    border: 3px solid #FEDD04;
+    outline: 5px solid #262484;
+    padding: 5px;
+
   }
+  
   
   p {
     font-size: 1.2em; /* Set the font size to 1.2em */
@@ -44,7 +51,7 @@ body{
   }
   
   .donate-button {
-    display: inline-block; /* Display the button as an inline block */
+    
     padding: 10px 20px; /* Add padding to the button */
     border: none; /* Remove the border from the button */
     border-radius: 4px; /* Add rounded corners to the button */
@@ -53,28 +60,97 @@ body{
     font-size: 1.2em; /* Set the font size of the button to 1.2em */
     text-align: center; /* Center the text of the button */
     cursor: pointer; /* Change the cursor to a pointer when hovering over the button */
-  }
-  
-  .donate-button:hover {
+    transition: background-color 0.3s ease-in-out;
+}
+
+.donate-button:hover {
+    background-color: #FEDD04;
     color: #262484;
-    background-color: #FEDD04; /* Set the background color of the button on hover to a slightly darker green */
+    transition: background-color 0.3s ease-in-out;
+}
+
+.donate-button:active,
+.donate-button:focus {
+    background-color: #262484;
+    color: #fff;
+    outline: none;
+}
+/* Table Style */
+.styled-table {
+    border-collapse: collapse;
+    margin: 25px 0;
+    font-size: 1em;
+    font-family: sans-serif;
+    min-width: 400px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+    text-align: center;
+}
+
+.styled-table thead tr {
+    background-color: #262484;
+    color: #FEDD04;
+    text-align: left;
+    text-align: center;
+}
+
+.styled-table th,
+.styled-table td {
+    padding: 12px 15px;
+}
+.styled-table tbody tr {
+    border-bottom: 1px solid #dddddd;
+}
+
+.styled-table tbody tr:nth-of-type(even) {
+    background-color: #f3f3f3;
+}
+
+.styled-table tbody tr:last-of-type {
+    border-bottom: 2px solid #262484;
+}
+
+.styled-table tbody tr.active-row {
+    font-weight: bold;
+    color: #262484;
+}
+/* Bottom Buttons */
+
+.button-aadmy-bottom-container {
+    text-align: center;
+}
+
+a {
+    color: #262484;
+    text-decoration: none;
   }
   
-  table {
-  border: 1px solid black;
-  font-family: Arial, sans-serif;
-  background-color: #fff;
-  align-items: center;
+  a:hover {
+    color: #FEDD04;
+    text-decoration: underline;
+  }
   
+
+.button-aadmy-bottom {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #262484;
+    color: #FEDD04;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease-in-out;
 }
-th {
-  background-color: #262484;
-  font-weight: bold;
-  color: #FEDD04;
-  border: 0.5px solid #FEDD04;
+
+.button-aadmy-bottom:hover {
+    background-color: #FEDD04;
+    color: #262484;
+    transition: background-color 0.3s ease-in-out;
 }
-td {
-  border: 0.5px solid #FEDD04;
-  padding: 10px;
-  text-align: center;
+
+.button-aadmy-bottom:active,
+.button-aadmy-bottom:focus {
+    background-color: #262484;
+    color: #fff;
+    outline: none;
 }
+
+

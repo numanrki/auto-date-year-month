@@ -67,9 +67,12 @@ Bugs Fixed and Major Chnages Added: April  02, 2023
 * Freemius SDK updated to v2.5.6
 
 = 1.1.0 =
-Bugs Fixed and Minor Chnages Added: April  02, 2023
+Bugs Fixed and Minor Chnages Added: April  05, 2023
 
 * Bugs Fixed
 * README.txt Updated
 * FAQ Updated
 * Contributors Added
+* Style Rearranged
+* Useless Files Removed
+* Welcome Page Edited

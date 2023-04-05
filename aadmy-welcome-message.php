@@ -8,9 +8,9 @@
   <h1>Welcome to the AADMY Add Auto Date Month Year Plugin</h1>
   <p>Thank you for installing our plugin. With this plugin, you can easily add auto dates, months, and years to your WordPress posts and pages using shortcodes. Some of the shortcodes that you can use include:</p>
   <div style="display: flex; align-items: center; justify-content: center;">
-  <table style="width: 800px;">
+  <table style="width: 1000px;" class="styled-table">
   <thead>
-    <tr>
+    <tr class="active-row">
       <th>Purpose</th>
       <th>e.g.</th>
       <th>ShortCodes</th>
@@ -69,5 +69,16 @@
   <p>If you find this plugin useful, please consider buying us a coffee as a token of your appreciation. We rely on donations to keep our plugin development going and your support is greatly appreciated.</p>
   <a class="donate-button" href="https://bit.ly/aadmyCoffee" target="_blank">Buy me a coffee</a>
 </div>
+
+<div class="button-aadmy-bottom-container">
+		<?php
+			$aadmy_support_url = 'https://wordpress.org/support/plugin/auto-date-year-month/';
+			$aadmy_review_url = 'https://wordpress.org/support/plugin/auto-date-year-month/reviews/#new-post';
+			$aadmy_plugin_url = 'https://bit.ly/AadmyGuide';
+		?>
+		<a href="<?php echo $aadmy_support_url; ?>" target="_blank" class="button-aadmy-bottom">Support</a>
+		<a href="<?php echo $aadmy_review_url; ?>" target="_blank" class="button-aadmy-bottom">Leave Review</a>
+		<a href="<?php echo $aadmy_plugin_url; ?>" target="_blank" class="button-aadmy-bottom">Plugin Page</a>
+	</div>
     </body>
   </html>
