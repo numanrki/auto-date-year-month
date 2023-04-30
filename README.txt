@@ -194,3 +194,8 @@ Bugs Fixed and Minor Chnages Added: April  05, 2023
 * Style Rearranged
 * Useless Files Removed
 * Welcome Page Edited
+
+= 1.1.1 =
+Bugs Fixed and Minor Chnages Added: April  30, 2023
+
+* FCR Function Updated (Bug Fixed)
