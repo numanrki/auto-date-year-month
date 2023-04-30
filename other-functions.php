@@ -13,7 +13,7 @@ add_shortcode('st', 'shortcode_get_domain_name_aadmy');
 // Add Copy Rights 
 function copyright_symbol_shortcode_aadmy() {
   $copy_year = date('Y');
-  return '&copy; ' . $copy_year . ' ' . do_shortcode('[st]') . ' All Rights Reserved.';
+  return '&copy; ' . $copy_year . ' ' . do_shortcode('[st]') . ' -' . ' All Rights Reserved.';
 }
   add_shortcode('fcr', 'copyright_symbol_shortcode_aadmy');
 
