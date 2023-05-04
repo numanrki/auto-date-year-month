@@ -3,7 +3,7 @@
  * Plugin Name: AADMY - Add Auto Date Month Year Into Posts
  * Plugin URI: https://wordpress.org/plugins/auto-date-year-month/
  * Description: This WordPress plugin allows you to dynamically add current dates, years, months, and other time-related elements to your content.
- * Version: 1.1.0
+ * Version: 1.1.1
  * Requires at least: 4.7
  * Tested up to: 6.2
  * Author: Numan Rasheed 
@@ -58,7 +58,7 @@ if ( ! function_exists( 'aadmyipd_fs' ) ) {
   do_action( 'aadmyipd_fs_loaded' );
 }
 
-define( 'Auto_Date_Year_Month_AADMY', '1.1.0' );
+define( 'Auto_Date_Year_Month_AADMY', '1.1.1' );
 
 //Other Functions to process
 require 'other-functions.php';
@@ -105,12 +105,15 @@ function add_current_short_day_shortcode_aadmy() {
 add_shortcode('sd', 'add_current_short_day_shortcode_aadmy');
 
 /* Full Date */
-function add_current_date_shortcode_aadmy()
-{
-  $current_date = date_i18n('F j, Y');
-  return $current_date;
+function add_current_date_shortcode_aadmy($atts) {
+  $args = shortcode_atts( array(
+    'offset' => '0',
+  ), $atts );
+  $offset = intval( $args['offset'] );
+  $date = date_i18n( 'F j, Y', strtotime( $offset > 0 ? "+$offset days" : "$offset days" ) );
+  return $date;
 }
-add_shortcode('today', 'add_current_date_shortcode_aadmy');
+add_shortcode( 'today', 'add_current_date_shortcode_aadmy' );
 
 /* Previous Year */
 function add_previous_year_shortcode_aadmy()

@@ -71,14 +71,18 @@
 </div>
 
 <div class="button-aadmy-bottom-container">
-		<?php
-			$aadmy_support_url = 'https://wordpress.org/support/plugin/auto-date-year-month/';
-			$aadmy_review_url = 'https://wordpress.org/support/plugin/auto-date-year-month/reviews/#new-post';
-			$aadmy_plugin_url = 'https://bit.ly/AadmyGuide';
-		?>
-		<a href="<?php echo $aadmy_support_url; ?>" target="_blank" class="button-aadmy-bottom">Support</a>
-		<a href="<?php echo $aadmy_review_url; ?>" target="_blank" class="button-aadmy-bottom">Leave Review</a>
-		<a href="<?php echo $aadmy_plugin_url; ?>" target="_blank" class="button-aadmy-bottom">Plugin Page</a>
-	</div>
+    <?php
+        $aadmy_support_url = 'https://wordpress.org/support/plugin/auto-date-year-month/';
+        $aadmy_review_url = 'https://wordpress.org/support/plugin/auto-date-year-month/reviews/#new-post';
+        $aadmy_plugin_url = 'https://bit.ly/AadmyGuide';
+        $aadmy_version = constant('Auto_Date_Year_Month_AADMY');
+    ?>
+    
+    <a href="<?php echo $aadmy_support_url; ?>" target="_blank" class="button-aadmy-bottom">Support</a>
+    <a href="<?php echo $aadmy_review_url; ?>" target="_blank" class="button-aadmy-bottom">Leave Review</a>
+    <a href="<?php echo $aadmy_plugin_url; ?>" target="_blank" class="button-aadmy-bottom">Plugin Page</a>
+	<p style="text-align:center; font-size: 12px; color: #666;">AADMY Plugin Version: <?php echo $aadmy_version; ?></p>
+</div>
+
     </body>
   </html>
