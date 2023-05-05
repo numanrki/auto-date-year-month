@@ -1,6 +1,6 @@
 <html>
 <?php
-  $css_path = plugins_url( '/assets/css/addmy-style.css', __FILE__ );
+  $css_path = plugins_url( '/css/addmy-style.css', __FILE__ );
 ?>
   <link rel="stylesheet" type="text/css" href="<?php echo $css_path; ?>">
     <body>

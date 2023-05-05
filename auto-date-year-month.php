@@ -60,12 +60,16 @@ if ( ! function_exists( 'aadmyipd_fs' ) ) {
 
 define( 'Auto_Date_Year_Month_AADMY', '1.1.1' );
 
-//Other Functions to process
-require 'other-functions.php';
-shortcode_get_domain_name_aadmy();
-copyright_symbol_shortcode_aadmy();
-copy_symbol_shortcode_aadmy();
-modified_date_shortcode_aadmy();
+// Include the offsets file
+include_once( plugin_dir_path( __FILE__ ) . 'aadmy-shortcodes/aadmy-offsets.php' );
+include_once( plugin_dir_path( __FILE__ ) . 'aadmy-shortcodes/aadmy-other-functions.php' );
+
+// //Other Functions to process
+// require 'other-functions.php';
+// shortcode_get_domain_name_aadmy();
+// copyright_symbol_shortcode_aadmy();
+// copy_symbol_shortcode_aadmy();
+// modified_date_shortcode_aadmy();
 
 /* Current Year */
 function add_current_year_shortcode_aadmy()
@@ -176,7 +180,8 @@ function process_shortcodes_in_rank_math_description($description) {
 }
 add_filter('rank_math/frontend/description', 'process_shortcodes_in_rank_math_description');
 
-include 'aadmy-menu.php';
+// AAdmy Includes /CSS/Welcome Page/AADMY Menu
+include( plugin_dir_path( __FILE__ ) . 'aadmy-includes/aadmy-menu.php' );
 
  // Settings Link ight Next to deactive Link
  add_filter('plugin_action_links', 'custom_plugin_settings_link_aadmy', 10, 2);
