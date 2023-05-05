@@ -13,6 +13,7 @@ License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
 == Description ==
 This WordPress plugin allows you to dynamically add current dates, years, months, and other time-related elements to your content. It helps to keep your content up-to-date and improve your SEO thus ensuring that your website's content is always fresh and relevant. With this plugin, you can easily add dynamic current time elements to your website without any coding knowledge.
+
 * This plugin adds the following short codes to your WordPress Blog/Site:
 
 * **[cy]** - Stands For [Current Year] This would output the current year, the previous year, and the next year in the post, like this: (e.g. 2023)
@@ -25,6 +26,14 @@ This WordPress plugin allows you to dynamically add current dates, years, months
 * **[nm]** - Stands For [Next Month] Outputs the name of next month  (e.g. This month is December when you use given shortcode output must be January)
 * **[pm]** - Stands For [Previous Month] Outputs the name of previous month  (e.g. This month is December when you use given shortcode output must be November)
 
+== [offset] ==
+* This shortcode will display a previous or future date based on an offset from the current date. Usage: **[offset date="OFFSET"]**, where **"OFFSET"** is an integer representing the number of days before **(-)** or after **(+)** the current date. Examples:
+1. **[offset date="-1"]** will display the previous date based on the user's timezone. Example output: **"May 4, 2023"**.
+2. **[offset date="0"]** is equivalent to **[today]** and will display the current date. Example output: **"May 5, 2023"**.
+3. **[offset date="1"]** will display the next date based on the user's timezone. Example output: **"May 6, 2023"**.
+4. **[offset date="365"]** will display the date one year from the current date based on the user's timezone. Example output: **"May 5, 2024"**.
+
+Note that the date format is "F j, Y" (e.g. "May 5, 2023"). You can modify this format by editing the `show_previous_dates()` function in the `functions.php` file.
 
 == Other Shortcodes ==
 * **[fcr]** - Stands For [Full Copyrights] Outputs the Footer Copyrights with (All Rights Reserved) text.
