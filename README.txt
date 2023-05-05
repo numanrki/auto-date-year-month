@@ -197,7 +197,8 @@ Bugs Fixed and Minor Chnages Added: April  05, 2023
 * Welcome Page Edited
 
 = 1.1.1 =
-Bugs Fixed and Minor Chnages Added: May  04, 2023
+Bugs Fixed and Major Chnages Added: May  05, 2023
 
 * FCR Function Updated (Bug Fixed)
-* Minor Changes
+* Offset date Function Added
+* Majorr Changes
