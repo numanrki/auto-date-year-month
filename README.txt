@@ -26,10 +26,6 @@ This WordPress plugin allows you to dynamically add current dates, years, months
 * **[pm]** - Stands For [Previous Month] Outputs the name of previous month  (e.g. This month is December when you use given shortcode output must be November)
 
 
-== Extras ==
-* **Offset Date** - The shortcode **[today]** will display the current date on a webpage. If you want to display the date from a previous day, you can use the shortcode **[today offset="-1"]**. Similarly, if you want to display the date from a future day, you can use **[today offset="1"]**.
-
-
 == Other Shortcodes ==
 * **[fcr]** - Stands For [Full Copyrights] Outputs the Footer Copyrights with (All Rights Reserved) text.
 * **[copy]** - Stands For [Just Copyrights Symbol] Outputs the © Symbol if user want show this symbol anywhere in where installed this plugin
@@ -204,5 +200,4 @@ Bugs Fixed and Minor Chnages Added: April  05, 2023
 Bugs Fixed and Minor Chnages Added: May  04, 2023
 
 * FCR Function Updated (Bug Fixed)
-* Offset Date Function Added
 * Minor Changes

@@ -111,19 +111,7 @@ function add_current_date_shortcode_aadmy()
   return $current_date;
 }
 add_shortcode('today', 'add_current_date_shortcode_aadmy');
-/* Get Offset Dates */
-function get_offset_date_shortcode_aadmy( $atts ) {
-  $a = shortcode_atts( array(
-    'days' => '0'
-  ), $atts );
-  
-  $days_to_add = intval( $a['days'] );
-  $current_date = new DateTime();
-  $current_date->modify( $days_to_add . ' day' );
-  
-  return $current_date->format( 'F j, Y' );
-}
-add_shortcode( 'date', 'get_offset_date_shortcode_aadmy' );
+
 
 /* Previous Year */
 function add_previous_year_shortcode_aadmy()
