@@ -39,8 +39,9 @@ Note that the date format is "F j, Y" (e.g. "May 5, 2023"). You can modify this 
 * **[fcr]** - Stands For [Full Copyrights] Outputs the Footer Copyrights with (All Rights Reserved) text.
 * **[copy]** - Stands For [Just Copyrights Symbol] Outputs the © Symbol if user want show this symbol anywhere in where installed this plugin
 * **[st]** - Stands For [Site Title] Outputs the Site URL with anchoring the Site Name 
-* **[post_modified]** - This will output the update date of the post or page where the shortcode is placed.
-* **[age dob="mm/dd/yyyy"]** With this code, you can use the shortcode [age dob="11/09/1994"] in your WordPress content to output the current age based on the provided date of birth.
+* **[post_modified]**: Use this shortcode to display the updated date of a post or page. It will show the date in the format "Month Day, Year" (e.g., May 27, 2023).
+* **[post_mdt]**: Use this shortcode to display the updated date and time of a post or page. It will show the date in the format "Month Day, Year" and the time in a 12-hour format with AM/PM (e.g., May 27, 2023 at 3:21 PM).
+* **[age dob="mm/dd/yyyy"]** With this code, you can use the shortcode **[age dob="11/09/1994"]** in your WordPress content to output the current age based on the provided date of birth.
 * **Note:** Make sure to replace **'11/09/1994'** with the actual date of birth that you want to use.
 * **[aadmy_event date="mm/dd/yyyy"]**  A numbers of years can be referred to using this short code. like **[aadmy_event date="04/12/2021"]** outputs the 1 years, 9 months, and 8 days ago
 * Setting Shortcodes for Copy
