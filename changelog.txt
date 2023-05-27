@@ -83,3 +83,8 @@ Bugs Fixed and Major Chnages Added: May  05, 2023
 * FCR Function Updated (Bug Fixed)
 * Offset date Function Added
 * Majorr Changes
+
+= 1.1.2 =
+Bugs Fixed and Minro Changes Added: May  27, 2023
+
+* Two Post Modified Functions are Added (With Date & With Date and Time)

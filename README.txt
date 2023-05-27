@@ -185,7 +185,7 @@ Bugs Fixed and New Shortcodes Added: March  20, 2023
 * Bugs Fixed
 
 = 1.0.9 =
-Bugs Fixed and Major Chnages Added: April  02, 2023
+Bugs Fixed and Major Changes Added: April  02, 2023
 
 * Bugs Fixed
 * Main File Renamed
@@ -195,7 +195,7 @@ Bugs Fixed and Major Chnages Added: April  02, 2023
 * Freemius SDK updated to v2.5.6
 
 = 1.1.0 =
-Bugs Fixed and Minor Chnages Added: April  05, 2023
+Bugs Fixed and Minor Changes Added: April  05, 2023
 
 * Bugs Fixed
 * README.txt Updated
@@ -206,8 +206,13 @@ Bugs Fixed and Minor Chnages Added: April  05, 2023
 * Welcome Page Edited
 
 = 1.1.1 =
-Bugs Fixed and Major Chnages Added: May  05, 2023
+Bugs Fixed and Major Changes Added: May  05, 2023
 
 * FCR Function Updated (Bug Fixed)
 * Offset date Function Added
 * Majorr Changes
+
+= 1.1.2 =
+Bugs Fixed and Minro Changes Added: May  27, 2023
+
+* Two Post Modified Functions are Added (With Date & With Date and Time)
