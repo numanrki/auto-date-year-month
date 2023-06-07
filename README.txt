@@ -1,6 +1,6 @@
 === AADMY - Add Auto Date Month Year Into Posts ===
 Contributors: numanrki, sallubhatti2, arslanrki
-Tags: SEO, current year, previous year, next year, dynamic year, auto date,dynamic date, auto dates in posts
+Tags: SEO, current year, year, shortcode, current year shortcode, copyright, copyright shortcode, trademark, copyright symbol, trademark shortcode, trademark symbol, symbol shortcode
 Author URI: https://wordpress.org/plugins/auto-date-year-month/
 Author: https://numanrki.com
 Donate link: https://bit.ly/aadmyCoffee
