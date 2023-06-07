@@ -19,10 +19,9 @@ function copyright_symbol_shortcode_aadmy() {
 
   // Add Copy Rights Symbol
   function copy_symbol_shortcode_aadmy() {
-    return '&copy;';
+    return html_entity_decode('&copy;', ENT_QUOTES, 'UTF-8');
   }
-  add_shortcode('copy', 'copy_symbol_shortcode_aadmy');
-
+  add_shortcode('c', 'copy_symbol_shortcode_aadmy');
 
 
 // Modified date of Posts/Pages
