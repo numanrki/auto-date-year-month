@@ -88,3 +88,4 @@ Bugs Fixed and Major Chnages Added: May  05, 2023
 Bugs Fixed and Minro Changes Added: May  27, 2023
 
 * Two Post Modified Functions are Added (With Date & With Date and Time)
+* Next and Previous Days Added for Next day use [nd] and for previous Day use [pd]

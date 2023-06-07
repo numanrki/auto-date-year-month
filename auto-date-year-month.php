@@ -87,6 +87,14 @@ function add_current_month_shortcode_aadmy()
 }
 add_shortcode('cm', 'add_current_month_shortcode_aadmy');
 
+/* Previous Day e.g. Thursday */
+function add_previous_day_shortcode_aadmy()
+{
+  $previous_day = date_i18n('l', strtotime('-1 day'));
+  return $previous_day;
+}
+add_shortcode('pd', 'add_previous_day_shortcode_aadmy');
+
 /* Current Day e.g. Friday */
 function add_current_day_shortcode_aadmy()
 {
@@ -94,6 +102,14 @@ function add_current_day_shortcode_aadmy()
   return $current_day;
 }
 add_shortcode('day', 'add_current_day_shortcode_aadmy');
+
+/* Previous Day e.g. Saturday */
+function add_next_day_shortcode_aadmy()
+{
+  $next_day = date_i18n('l', strtotime('+1 day'));
+  return $next_day;
+}
+add_shortcode('nd', 'add_next_day_shortcode_aadmy');
 
 // Current Date e.g. 27
 function add_current_n_date_shortcode_aadmy( $atts ){
