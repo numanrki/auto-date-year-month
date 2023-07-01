@@ -1,91 +1,80 @@
 == Changelog ==
 
-= 1.0.0 =
-Initial Release: December 21, 2022
+= 1.1.2 =
+Bugs Fixed and Minro Changes Added: May 27, 2023
 
-* Initial Release
+Two Post Modified Functions are Added (With Date & With Date and Time)
+Next and Previous Days Added for Next day use [nd] and for previous Day use [pd]
+= 1.1.1 =
+Bugs Fixed and Major Changes Added: May 05, 2023
 
-= 1.0.1 =
-Bugs Fixed and Some Other Changings: December 21, 2022
+FCR Function Updated (Bug Fixed)
+Offset date Function Added
+Major Changes
+= 1.1.0 =
+Bugs Fixed and Minor Changes Added: April 05, 2023
 
-* Bugs Fixed
-* Table and Menu Registered
+Bugs Fixed
+README.txt Updated
+FAQ Updated
+Contributors Added
+Style Rearranged
+Useless Files Removed
+Welcome Page Edited
+= 1.0.9 =
+Bugs Fixed and Major Changes Added: April 02, 2023
 
-= 1.0.2 =
-Bugs Fixed and New shortcodes added: December 22, 2022
+Bugs Fixed
+Main File Renamed
+Plugin Renamed
+Plugin Description Edited
+Session Removed from Copy/Paste
+Freemius SDK updated to v2.5.6
+= 1.0.8 =
+Bugs Fixed and New Shortcodes Added: March 20, 2023
 
-* Bugs Fixed and New shortcodes added
-* Copy Symbol & Copyrights Text short code added.
-* Show Last Modified Date using shortcode added
-
-= 1.0.3 =
-Bugs Fixed and New Shortcodes Added:December 23, 2022
-
-* Bugs Fixed
-* New shortcodes added
-* Welcome Page Added
-
-= 1.0.4 =
-Bugs Fixed and New Shortcodes Added: January 05, 2023
-
-* Bugs Fixed
-* New shortcodes added
-* SEO Plugins Support Added SEOPress/RankMath/YoastSEO
-
-= 1.0.5 =
-Bugs Fixed and New Shortcodes Added: January 08, 2023
-
-* Bugs Fixed
-* Age Calculator Added use shortcode to calculate The total age
-* Custom period function added (combined) A duration of years, months, or days can be referred to using this short code.
-
-= 1.0.6 =
-Bugs Fixed and Shortcodes Changed: January 27, 2023
-
-* Bugs Fixed
-* All Shortcode changed long to short for handle characters issues
-
+Bugs Fixed
 = 1.0.7 =
 Bugs Fixed and New Shortcodes Added: March 16, 2023
 
-* Bugs Fixed
-* New Shortcode for Copy Pasting Added
+Bugs Fixed
+New Shortcode for Copy Pasting Added
+= 1.0.6 =
+Bugs Fixed and Shortcodes Changed: January 27, 2023
 
-= 1.0.8 =
-Bugs Fixed and New Shortcodes Added: March  20, 2023
+Bugs Fixed
+All Shortcode changed long to short for handle characters issues
+= 1.0.5 =
+Bugs Fixed and New Shortcodes Added: January 10, 2023
 
-* Bugs Fixed
+Bugs Fixed
+Age Calculator Added use shortcode to calculate The total age
+Custom period function added (combined) A duration of years, months, or days can be referred to using this short code.
+= 1.0.4 =
+Bugs Fixed and New Shortcodes Added: January 05, 2023
 
-= 1.0.9 =
-Bugs Fixed and Major Chnages Added: April  02, 2023
+Bugs Fixed
+New shortcodes added
+SEO Plugins Support Added SEOPress/RankMath/YoastSEO
+= 1.0.3 =
+Bugs Fixed and New Shortcodes Added: December 23, 2022
 
-* Bugs Fixed
-* Main File Renamed
-* Plugin Renamed
-* Plugin Description Edited
-* Session Removed from Copy/Paste
-* Freemius SDK updated to v2.5.6
+Bugs Fixed
+New shortcodes added
+Welcome Page Added
+= 1.0.2 =
+Bugs Fixed and New shortcodes added: December 22, 2022
 
-= 1.1.0 =
-Bugs Fixed and Minor Chnages Added: April  05, 2023
+Bugs Fixed and New shortcodes added
+Copy Symbol & Copyrights Text short code added.
+Show Last Modified Date using shortcode added
+= 1.0.1 =
+Bugs Fixed and Some Other Changings: December 21, 2022
 
-* Bugs Fixed
-* README.txt Updated
-* FAQ Updated
-* Contributors Added
-* Style Rearranged
-* Useless Files Removed
-* Welcome Page Edited
+Bugs Fixed
+Table and Menu Registered
+= 1.0.0 =
+Initial Release: December 21, 2022
 
-= 1.1.1 =
-Bugs Fixed and Major Chnages Added: May  05, 2023
-
-* FCR Function Updated (Bug Fixed)
-* Offset date Function Added
-* Majorr Changes
-
-= 1.1.2 =
-Bugs Fixed and Minro Changes Added: May  27, 2023
-
-* Two Post Modified Functions are Added (With Date & With Date and Time)
-* Next and Previous Days Added for Next day use [nd] and for previous Day use [pd]
+Initial Release
+Now the versions are listed from latest to oldest.
