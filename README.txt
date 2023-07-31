@@ -8,8 +8,8 @@ Requires at least: 4.7
 Tested up to: 6.2
 Stable tag: 1.1.2
 Requires PHP: 7.0
-License: GPL2
-License URI: http://www.gnu.org/licenses/gpl-2.0.html
+License: GPL3
+License URI: http://www.gnu.org/licenses/gpl-3.0.html
 
 == Description ==
 This WordPress plugin allows you to dynamically add current dates, years, months, and other time-related elements to your content. It helps to keep your content up-to-date and improve your SEO thus ensuring that your website's content is always fresh and relevant. With this plugin, you can easily add dynamic current time elements to your website without any coding knowledge.

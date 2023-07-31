@@ -8,8 +8,8 @@
  * Tested up to: 6.2
  * Author: Numan Rasheed 
  * Author URI: https://www.numanrki.com
- * License: GPL2
- * License URI: https://www.gnu.org/licenses/old-licenses/gpl-2.0.txt
+ * License: GPL3
+ * License URI: https://www.gnu.org/licenses/gpl-3.0.html
  */
 
 
