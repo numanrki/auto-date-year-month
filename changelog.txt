@@ -1,4 +1,6 @@
 == Changelog ==
+= 1.1.3 =
+Latest WordPress Support Added: Aug 30, 2023
 
 = 1.1.2 =
 Bugs Fixed and Minro Changes Added: May 27, 2023
