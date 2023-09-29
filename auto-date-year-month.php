@@ -132,7 +132,7 @@ function add_current_date_shortcode_aadmy()
 }
 add_shortcode('today', 'add_current_date_shortcode_aadmy');
 
-/* Tomorrow Full Date */
+/* Show Tomorrow Full Date */
 function get_next_full_date_aadmy() {
   // Get the current date as a timestamp
   $current_date = strtotime(date_i18n('Y-m-d'));
@@ -145,6 +145,12 @@ function get_next_full_date_aadmy() {
 
   return $formatted_next_date;
 }
+
+// Register the shortcode with aadmy
+function tomorrow_shortcode_aadmy() {
+  return get_next_full_date_aadmy();
+}
+add_shortcode('tomorrow', 'tomorrow_shortcode_aadmy');
 
 /* Previous Year */
 function add_previous_year_shortcode_aadmy()
