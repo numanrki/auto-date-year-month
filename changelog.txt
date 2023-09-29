@@ -1,4 +1,9 @@
 == Changelog ==
+
+= 1.1.4 =
+New Abilities Added: Sep 30, 2023
+Tomorrow Full Date Added e.g, (Today is **September 30, 2023** it will show the **October 01, 2023** using simple shortcode **[tomorrow]**)
+
 = 1.1.3 =
 Latest WordPress Support Added: Aug 30, 2023
 

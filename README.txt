@@ -6,7 +6,7 @@ Author: https://numanrki.com
 Donate link: https://bit.ly/aadmyCoffee
 Requires at least: 4.7
 Tested up to: 6.3
-Stable tag: 1.1.3
+Stable tag: 1.1.4
 Requires PHP: 7.0
 License: GPL3
 License URI: http://www.gnu.org/licenses/gpl-3.0.html
@@ -20,6 +20,7 @@ This WordPress plugin allows you to dynamically add current dates, years, months
 * **[py]** - Stands For [Previous Year] Outputs the previous year (e.g. 2022)
 * **[ny]** - Stands For [Next Year] Outputs the next year (e.g. 2024)
 * **[today]** - Stands For [Today Full Date] Outputs the Full Date, month and year  (e.g. November 09, 1994)
+* **[tomorrow]** Stands For Next Day Full Date e.g, (Today is **September 30, 2023** it will show the **October 01, 2023** using simple shortcode **[tomorrow]**)
 * **[cd]** - Stands For [Current Date] Outputs the Current Day  (e.g. 27)
 * **[pd]** - Stands For [Previous day] Outputs the Previous Day  (e.g. Thursday)
 * **[day]** - Stands For [day] Outputs the Current Day  (e.g. Friday)
@@ -130,6 +131,10 @@ To add a date to your WordPress posts, you can use the shortcode [today], which 
 4. output of shortcodes
 
 == Changelog ==
+= 1.1.4 =
+New Abilities Added: Sep 30, 2023
+Tomorrow Full Date Added e.g, (Today is **September 30, 2023** it will show the **October 01, 2023** using simple shortcode **[tomorrow]**)
+
 
 = 1.1.3 =
 Latest WordPress Support Added: Aug 30, 2023
