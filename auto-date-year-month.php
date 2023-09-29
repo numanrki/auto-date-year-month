@@ -132,6 +132,19 @@ function add_current_date_shortcode_aadmy()
 }
 add_shortcode('today', 'add_current_date_shortcode_aadmy');
 
+/* Tomorrow Full Date */
+function get_next_full_date_aadmy() {
+  // Get the current date as a timestamp
+  $current_date = strtotime(date_i18n('Y-m-d'));
+
+  // Calculate the next day's timestamp
+  $next_date = strtotime('+1 day', $current_date);
+
+  // Format the next date as MM DD, YYYY
+  $formatted_next_date = date_i18n('F d, Y', $next_date);
+
+  return $formatted_next_date;
+}
 
 /* Previous Year */
 function add_previous_year_shortcode_aadmy()
