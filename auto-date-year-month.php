@@ -4,7 +4,7 @@
  * Plugin URI: https://wordpress.org/plugins/auto-date-year-month/
  * Description: This WordPress plugin allows you to dynamically add current dates, years, months, and other time-related elements to your content.
  * Version: 1.1.4
- * Requires at least: 4.7
+ * Requires at least: 5.0
  * Tested up to: 6.4
  * Author: Numan Rasheed 
  * Author URI: https://www.numanrki.com
