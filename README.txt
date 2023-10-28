@@ -5,8 +5,8 @@ Author URI: https://wordpress.org/plugins/auto-date-year-month/
 Author: https://numanrki.com
 Donate link: https://bit.ly/aadmyCoffee
 Requires at least: 4.7
-Tested up to: 6.3
-Stable tag: 1.1.3
+Tested up to: 6.4
+Stable tag: 1.1.4
 Requires PHP: 7.0
 License: GPL3
 License URI: http://www.gnu.org/licenses/gpl-3.0.html
@@ -130,6 +130,9 @@ To add a date to your WordPress posts, you can use the shortcode [today], which 
 4. output of shortcodes
 
 == Changelog ==
+
+= 1.1.4 =
+Latest WordPress 6.4 Support Added: November 28, 2023
 
 = 1.1.3 =
 Latest WordPress Support Added: Aug 30, 2023
