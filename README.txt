@@ -132,6 +132,11 @@ To add a date to your WordPress posts, you can use the shortcode [today], which 
 
 == Changelog ==
 
+= 1.1.4 =
+Latest WordPress 6.4 Support Added: Oct 28, 2023
+New Abilities Added
+Tomorrow Full Date Added e.g, (Today is **September 30, 2023** it will show the **October 01, 2023** using simple shortcode **[tomorrow]**)
+
 = 1.1.3 =
 Latest WordPress Support Added: Aug 30, 2023
 
