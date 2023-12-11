@@ -132,6 +132,9 @@ To add a date to your WordPress posts, you can use the shortcode [today], which 
 
 == Changelog ==
 
+= 1.1.5 =
+Freemius SDK Version Updated To 2.6.1
+
 = 1.1.4 =
 Latest WordPress 6.4 Support Added: Oct 28, 2023
 New Abilities Added
