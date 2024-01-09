@@ -188,32 +188,91 @@ add_shortcode( 'pm', 'get_prev_month_aadmy' );
 
 
 // Also Work with WP Basic elements, Like Titles, Post Title, Expcerts
-add_filter( 'the_title', 'do_shortcode' );
-add_filter( 'single_post_title', 'do_shortcode' );
-add_filter( 'wp_title', 'do_shortcode' );
+// add_filter( 'the_title', 'do_shortcode' );
+// add_filter( 'single_post_title', 'do_shortcode' );
+// add_filter( 'wp_title', 'do_shortcode' );
+// add_filter('the_excerpt', 'do_shortcode');
+// add_filter('widget_text', 'do_shortcode');
+// add_action('wp_footer', 'do_shortcode');
+
+// Posts and Pages
+add_filter('the_title', 'do_shortcode');
+add_filter('single_post_title', 'do_shortcode');
+add_filter('wp_title', 'do_shortcode');
+add_filter('the_content', 'do_shortcode');
 add_filter('the_excerpt', 'do_shortcode');
+
+// Widgets
+add_filter('widget_text_content', 'do_shortcode');
 add_filter('widget_text', 'do_shortcode');
+
+// Menus
+add_filter('wp_nav_menu', 'do_shortcode');
+
+// Header and Footer
+add_action('wp_head', 'do_shortcode');
 add_action('wp_footer', 'do_shortcode');
 
-// SEO Plugins Additions 
+// Comments
+add_filter('comment_text', 'do_shortcode');
+
+// Media
+add_filter('the_content', 'do_shortcode');
+
+// User Profile
+add_action('show_user_profile', 'do_shortcode');
+
+// Archives
+add_filter('get_archives_link', 'do_shortcode');
+
+// Search
+add_filter('get_search_form', 'do_shortcode');
+
+// Login/Logout
+add_filter('login_form', 'do_shortcode');
+add_filter('logout_url', 'do_shortcode');
+
+// // SEO Plugins Additions 
+// // Filter Added for SEOPress Plugin 
+// add_filter( 'seopress_titles_title', 'do_shortcode');
+// add_filter( 'seopress_titles_desc', 'do_shortcode');
+
+// // Filter Added for Yoast SEO Plugin
+// add_filter( 'wpseo_title', 'do_shortcode' );
+// add_filter( 'wpseo_metadesc', 'do_shortcode' );
+
+// // Filter Added For Rank Math SEO Plugin
+// function process_shortcodes_in_rank_math_title($title) {
+//   return do_shortcode($title);
+// }
+// add_filter('rank_math/frontend/title', 'process_shortcodes_in_rank_math_title');
+
+// function process_shortcodes_in_rank_math_description($description) {
+//   return do_shortcode($description);
+// }
+// add_filter('rank_math/frontend/description', 'process_shortcodes_in_rank_math_description');
+
+
 // Filter Added for SEOPress Plugin 
-add_filter( 'seopress_titles_title', 'do_shortcode');
-add_filter( 'seopress_titles_desc', 'do_shortcode');
+add_filter('seopress_titles_title', 'do_shortcode');
+add_filter('seopress_titles_desc', 'do_shortcode');
 
 // Filter Added for Yoast SEO Plugin
-add_filter( 'wpseo_title', 'do_shortcode' );
-add_filter( 'wpseo_metadesc', 'do_shortcode' );
+add_filter('wpseo_title', 'do_shortcode');
+add_filter('wpseo_metadesc', 'do_shortcode');
 
 // Filter Added For Rank Math SEO Plugin
 function process_shortcodes_in_rank_math_title($title) {
   return do_shortcode($title);
 }
-add_filter('rank_math/frontend/title', 'process_shortcodes_in_rank_math_title');
+add_filter('rank_math/frontend/title', 'process_shortcodes_in_rank_math_title', 20); // Increased priority
 
 function process_shortcodes_in_rank_math_description($description) {
   return do_shortcode($description);
 }
-add_filter('rank_math/frontend/description', 'process_shortcodes_in_rank_math_description');
+add_filter('rank_math/frontend/description', 'process_shortcodes_in_rank_math_description', 20); // Increased priority
+
+
 
 // AAdmy Includes /CSS/Welcome Page/AADMY Menu
 include( plugin_dir_path( __FILE__ ) . 'aadmy-includes/aadmy-menu.php' );
