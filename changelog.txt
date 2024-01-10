@@ -1,5 +1,11 @@
 == Changelog ==
 
+= 1.1.6 =
+Shortcodes Enabled For: Jan 10, 2024
+SEO Plugins (Yoast, RankMath, SEOPress)
+Shortcode Enabled For Elementor Elements
+Some Minor Bugs Fixed
+
 = 1.1.5 =
 Freemius SDK Version Updated To 2.6.1
 

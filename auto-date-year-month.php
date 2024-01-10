@@ -3,7 +3,7 @@
  * Plugin Name: AADMY - Add Auto Date Month Year Into Posts
  * Plugin URI: https://wordpress.org/plugins/auto-date-year-month/
  * Description: This WordPress plugin allows you to dynamically add current dates, years, months, and other time-related elements to your content.
- * Version: 1.1.5
+ * Version: 1.1.6
  * Requires at least: 5.0
  * Tested up to: 6.4
  * Author: Numan Rasheed 
@@ -58,7 +58,7 @@ if ( ! function_exists( 'aadmyipd_fs' ) ) {
   do_action( 'aadmyipd_fs_loaded' );
 }
 
-define( 'Auto_Date_Year_Month_AADMY', '1.1.5' );
+define( 'Auto_Date_Year_Month_AADMY', '1.1.6' );
 
 // Include the offsets file
 include_once( plugin_dir_path( __FILE__ ) . 'aadmy-shortcodes/aadmy-offsets.php' );
@@ -188,13 +188,6 @@ add_shortcode( 'pm', 'get_prev_month_aadmy' );
 
 
 // Also Work with WP Basic elements, Like Titles, Post Title, Expcerts
-// add_filter( 'the_title', 'do_shortcode' );
-// add_filter( 'single_post_title', 'do_shortcode' );
-// add_filter( 'wp_title', 'do_shortcode' );
-// add_filter('the_excerpt', 'do_shortcode');
-// add_filter('widget_text', 'do_shortcode');
-// add_action('wp_footer', 'do_shortcode');
-
 // Posts and Pages
 add_filter('the_title', 'do_shortcode');
 add_filter('single_post_title', 'do_shortcode');
@@ -232,25 +225,41 @@ add_filter('get_search_form', 'do_shortcode');
 add_filter('login_form', 'do_shortcode');
 add_filter('logout_url', 'do_shortcode');
 
-// // SEO Plugins Additions 
-// // Filter Added for SEOPress Plugin 
-// add_filter( 'seopress_titles_title', 'do_shortcode');
-// add_filter( 'seopress_titles_desc', 'do_shortcode');
 
-// // Filter Added for Yoast SEO Plugin
-// add_filter( 'wpseo_title', 'do_shortcode' );
-// add_filter( 'wpseo_metadesc', 'do_shortcode' );
+// Enable shortcodes in Elementor editor
+add_filter('elementor/editor/content/before_save', 'do_shortcode');
+add_filter('elementor/frontend/the_content', 'do_shortcode');
+add_filter('elementor_pro/editor/content/before_save', 'do_shortcode');
+add_filter('elementor_pro/frontend/the_content', 'do_shortcode');
 
-// // Filter Added For Rank Math SEO Plugin
-// function process_shortcodes_in_rank_math_title($title) {
-//   return do_shortcode($title);
-// }
-// add_filter('rank_math/frontend/title', 'process_shortcodes_in_rank_math_title');
 
-// function process_shortcodes_in_rank_math_description($description) {
-//   return do_shortcode($description);
-// }
-// add_filter('rank_math/frontend/description', 'process_shortcodes_in_rank_math_description');
+// Enable shortcodes in Elementor editor for basic elements
+add_filter('elementor/editor/content/before_save', 'do_shortcode');
+add_filter('elementor/frontend/the_content', 'do_shortcode');
+add_filter('elementor_pro/editor/content/before_save', 'do_shortcode');
+add_filter('elementor_pro/frontend/the_content', 'do_shortcode');
+
+// Enable shortcodes in Elementor editor for specific elements
+add_filter('elementor/widget/text_content', 'do_shortcode');
+add_filter('elementor/widget/shortcode/render', 'do_shortcode');
+add_filter('elementor/element/post_excerpt_text', 'do_shortcode');
+add_filter('elementor/element/post_content', 'do_shortcode');
+add_filter('elementor/element/post_title/style_typography_render', 'do_shortcode');
+add_filter('elementor/element/heading/section_typography_render', 'do_shortcode');
+add_filter('elementor/element/heading/style_typography_render', 'do_shortcode');
+add_filter('elementor/element/heading_text', 'do_shortcode');
+add_filter('elementor/element/text-editor/text_content', 'do_shortcode');
+add_filter('elementor/element/shortcode/render', 'do_shortcode');
+add_filter('elementor/element/section/columns', 'do_shortcode');
+add_filter('elementor/element/section/column_content', 'do_shortcode');
+add_filter('elementor/element/section/column_text', 'do_shortcode');
+add_filter('elementor/element/section/text_content', 'do_shortcode');
+add_filter('elementor/element/section_icon_list_items', 'do_shortcode');
+add_filter('elementor/element/section_icon_list_icon_text', 'do_shortcode');
+add_filter('elementor/element/icon-list/text_content', 'do_shortcode');
+add_filter('elementor/element/icon-list-item/text_content', 'do_shortcode');
+
+// Add more filters for other Elementor elements as needed
 
 
 // Filter Added for SEOPress Plugin 
