@@ -186,6 +186,13 @@ function get_prev_month_aadmy() {
 add_shortcode( 'pm', 'get_prev_month_aadmy' );
 
 
+// Parse shortcodes within alt attributes like (Images alt Text)
+function parse_shortcodes_in_alt_attribute_aadmy( $attr, $attachment ) {
+  $attr['alt'] = do_shortcode( $attr['alt'] );
+  return $attr;
+}
+add_filter( 'wp_get_attachment_image_attributes', 'parse_shortcodes_in_alt_attribute_aadmy', 10, 2 );
+
 
 // Also Work with WP Basic elements, Like Titles, Post Title, Expcerts
 // Posts and Pages
