@@ -58,7 +58,7 @@ if ( ! function_exists( 'aadmyipd_fs' ) ) {
   do_action( 'aadmyipd_fs_loaded' );
 }
 
-define( 'Auto_Date_Year_Month_AADMY', '1.1.7' );
+define( 'Auto_Date_Year_Month_AADMY', '1.1.8' );
 
 // Include the offsets file
 include_once( plugin_dir_path( __FILE__ ) . 'aadmy-shortcodes/aadmy-offsets.php' );
