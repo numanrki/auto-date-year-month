@@ -137,6 +137,7 @@ Updated on: April 16, 2024
 Copy Rights Symbol Fixed
 ReadMe File Updated
 Bugs Fixed
+Freemius SDK Version Updated To 2.7.0
 
 = 1.1.7 =
 Updated on: April 15, 2024
