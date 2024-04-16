@@ -68,7 +68,7 @@ Call Shortcodes with PHP
 * This plugin is compatible with WordPress versions 4.7 and higher, as well as with any WordPress theme.
 
 == Full Guide ==
-* For more information and usage examples, you can visit our [plugin page](https://numanrki.com/aadmy-add-auto-date-month-year.html).
+* For more information and usage examples, you can visit our [plugin page](https://numanrki.com/aadmy-wordpress-plugin/).
 * If you have a problem with our plugin or have any questions, you can contact our support team by emailing dm@numanrki.com or by [visiting our support forum](https://wordpress.org/support/plugin/auto-date-year-month/). We will do our best to assist you and resolve any issues you may have.
 
 == Installation ==
