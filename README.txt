@@ -40,7 +40,7 @@ Note that the date format is "F j, Y" (e.g. "May 5, 2023"). You can modify this 
 
 == Other Shortcodes ==
 * **[fcr]** - Stands For [Full Copyrights] Outputs the Footer Copyrights with (All Rights Reserved) text.
-* **[c]** - Stands For [Just Copyrights Symbol] Outputs the © Symbol if user want show this symbol anywhere in where installed this plugin
+* **[cs]** - Stands For [Just Copyrights Symbol] Outputs the © Symbol if user want show this symbol anywhere in where installed this plugin
 * **[st]** - Stands For [Site Title] Outputs the Site URL with anchoring the Site Name 
 * **[post_modified]**: Use this shortcode to display the updated date of a post or page. It will show the date in the format "Month Day, Year" (e.g., May 27, 2023).
 * **[post_mdt]**: Use this shortcode to display the updated date and time of a post or page. It will show the date in the format "Month Day, Year" and the time in a 12-hour format with AM/PM (e.g., May 27, 2023 at 3:21 PM).

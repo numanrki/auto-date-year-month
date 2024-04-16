@@ -21,7 +21,7 @@ function copyright_symbol_shortcode_aadmy() {
   function copy_symbol_shortcode_aadmy() {
     return html_entity_decode('&copy;', ENT_QUOTES, 'UTF-8');
   }
-  add_shortcode('c', 'copy_symbol_shortcode_aadmy');
+  add_shortcode('cs', 'copy_symbol_shortcode_aadmy');
 
 
 // Modified date of Posts/Pages
