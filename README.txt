@@ -16,11 +16,11 @@ This WordPress plugin allows you to dynamically add current dates, years, months
 
 * This plugin adds the following short codes to your WordPress Blog/Site:
 
-* **[cy]** - Stands For [Current Year] This would output the current year, the previous year, and the next year in the post, like this: (e.g. 2023)
-* **[py]** - Stands For [Previous Year] Outputs the previous year (e.g. 2022)
-* **[ny]** - Stands For [Next Year] Outputs the next year (e.g. 2024)
+* **[cy]** - Stands For [Current Year] This would output the current year, the previous year, and the next year in the post, like this: (e.g. 2024)
+* **[py]** - Stands For [Previous Year] Outputs the previous year (e.g. 2023)
+* **[ny]** - Stands For [Next Year] Outputs the next year (e.g. 2025)
 * **[today]** - Stands For [Today Full Date] Outputs the Full Date, month and year  (e.g. November 09, 1994)
-* **[tomorrow]** Stands For Next Day Full Date e.g, (Today is **September 30, 2023** it will show the **October 01, 2023** using simple shortcode **[tomorrow]**)
+* **[tomorrow]** Stands For Next Day Full Date e.g, (Today is **April 16, 2024** it will show the **April 17, 2024** using simple shortcode **[tomorrow]**)
 * **[cd]** - Stands For [Current Date] Outputs the Current Day  (e.g. 27)
 * **[pd]** - Stands For [Previous day] Outputs the Previous Day  (e.g. Thursday)
 * **[day]** - Stands For [day] Outputs the Current Day  (e.g. Friday)
@@ -69,7 +69,7 @@ Call Shortcodes with PHP
 
 == Full Guide ==
 * For more information and usage examples, you can visit our [plugin page](https://numanrki.com/aadmy-add-auto-date-month-year.html).
-* If you have a problem with our plugin or have any questions, you can contact our support team by emailing salam@numanrki.com or by [visiting our support forum](https://wordpress.org/support/plugin/auto-date-year-month/). We will do our best to assist you and resolve any issues you may have.
+* If you have a problem with our plugin or have any questions, you can contact our support team by emailing dm@numanrki.com or by [visiting our support forum](https://wordpress.org/support/plugin/auto-date-year-month/). We will do our best to assist you and resolve any issues you may have.
 
 == Installation ==
 
@@ -132,10 +132,7 @@ To add a date to your WordPress posts, you can use the shortcode [today], which 
 
 == Changelog ==
 
-= 1.1.7 =
-Updated on: April 15, 2024
-Parse shortcodes within alt attributes like (Images alt Text)
-Latest WordPress 6.5 Support Added
+bbbbb
 
 = 1.1.6 =
 Shortcodes Enabled For: Jan 10, 2024
