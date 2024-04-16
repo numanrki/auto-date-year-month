@@ -1,5 +1,11 @@
 == Changelog ==
 
+= 1.1.8 =
+Updated on: April 16, 2024
+Copy Rights Symbol Fixed
+ReadMe File Updated
+Bugs Fixed
+
 = 1.1.7 =
 Updated on: April 15, 2024
 Parse shortcodes within alt attributes like (Images alt Text)

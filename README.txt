@@ -6,7 +6,7 @@ Author: https://numanrki.com
 Donate link: https://bit.ly/aadmyCoffee
 Requires at least: 5.0
 Tested up to: 6.5
-Stable tag: 1.1.7
+Stable tag: 1.1.8
 Requires PHP: 7.0
 License: GPL3
 License URI: http://www.gnu.org/licenses/gpl-3.0.html
@@ -132,7 +132,16 @@ To add a date to your WordPress posts, you can use the shortcode [today], which 
 
 == Changelog ==
 
-bbbbb
+= 1.1.8 =
+Updated on: April 16, 2024
+Copy Rights Symbol Fixed
+ReadMe File Updated
+Bugs Fixed
+
+= 1.1.7 =
+Updated on: April 15, 2024
+Parse shortcodes within alt attributes like (Images alt Text)
+Latest WordPress 6.5 Support Added
 
 = 1.1.6 =
 Shortcodes Enabled For: Jan 10, 2024
