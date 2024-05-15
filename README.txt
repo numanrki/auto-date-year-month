@@ -133,7 +133,7 @@ To add a date to your WordPress posts, you can use the shortcode [today], which 
 == Changelog ==
 
 = 1.1.8 =
-Updated on: April 16, 2024
+Updated on: May 15, 2024
 Copy Rights Symbol Fixed
 ReadMe File Updated
 Bugs Fixed
