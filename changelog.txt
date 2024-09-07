@@ -1,5 +1,12 @@
 == Changelog ==
 
+= 1.1.9 =
+Updated on: September 7, 2024
+
+User Profile Bug Fixed: Resolved an issue where the update button was not showing up on the user profile page.
+Freemius SDK Version Updated: Updated Freemius SDK to version 2.7.4 for improved stability and new features.
+Code Optimized: Improved plugin structure, reduced redundancy in shortcode handling, and increased overall efficiency.
+
 = 1.1.8 =
 Updated on: May 15, 2024
 Copy Rights Symbol Fixed

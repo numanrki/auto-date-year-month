@@ -6,7 +6,7 @@ Author: https://numanrki.com
 Donate link: https://bit.ly/aadmyCoffee
 Requires at least: 5.0
 Tested up to: 6.5
-Stable tag: 1.1.8
+Stable tag: 1.1.9
 Requires PHP: 7.0
 License: GPL3
 License URI: http://www.gnu.org/licenses/gpl-3.0.html
@@ -131,6 +131,13 @@ To add a date to your WordPress posts, you can use the shortcode [today], which 
 4. output of shortcodes
 
 == Changelog ==
+
+= 1.1.9 =
+Updated on: September 7, 2024
+
+**User Profile Bug Fixed**: Resolved an issue where the update button was not showing up on the user profile page.
+**Freemius SDK Version Updated**: Updated Freemius SDK to version 2.7.4 for improved stability and new features.
+**Code Optimized**: Improved plugin structure, reduced redundancy in shortcode handling, and increased overall efficiency.
 
 = 1.1.8 =
 Updated on: May 15, 2024
