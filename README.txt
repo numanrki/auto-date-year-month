@@ -5,7 +5,7 @@ Author URI: https://wordpress.org/plugins/auto-date-year-month/
 Author: https://numanrki.com
 Donate link: https://bit.ly/aadmyCoffee
 Requires at least: 5.0
-Tested up to: 6.5
+Tested up to: 6.6.1
 Stable tag: 1.1.9
 Requires PHP: 7.0
 License: GPL3
