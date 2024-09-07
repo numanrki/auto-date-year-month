@@ -138,7 +138,7 @@ a:hover {
 }
 
 .button-aadmy-bottom:hover {
-  background-color: #FFFFFF; /* Changed button hover background color to white */
+  background-color: #000000; /* Changed button hover background color to white */
   color: #E60023; /* Changed button hover text color to red */
   transition: background-color 0.3s ease-in-out;
 }
