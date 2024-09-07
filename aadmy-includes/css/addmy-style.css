@@ -1,156 +1,151 @@
 body{
-    background-color: white;
-  }
-      .welcome-page-wrap {
-    width: 80%; /* Set the width of the welcome page to 80% */
-    margin: 0 auto; /* Center the welcome page */
-    font-family: Arial, sans-serif; /* Set the font for the welcome page */
-  }
-  
-  h1 {
-    text-align: center;
-    font-size: 30px;
-    font-weight: bold;
-    color: #262484;
-    text-shadow: 2px 2px #FEDD04;
-    margin-top: 30px;
-    line-height: 1;
-    border: 3px solid #FEDD04;
-    outline: 5px solid #262484;
-    padding: 5px;
+  background-color: white;
+}
+.welcome-page-wrap {
+  width: 80%; /* Set the width of the welcome page to 80% */
+  margin: 0 auto; /* Center the welcome page */
+  font-family: Arial, sans-serif; /* Set the font for the welcome page */
+}
 
-  }
-  
-  
-  p {
-    font-size: 1.2em; /* Set the font size to 1.2em */
-    line-height: 1.5; /* Set the line height to 1.5 */
-    margin: 20px 0; /* Add a margin of 20px at the top and bottom of the paragraphs */
-  }
-  
-  ul {
-    list-style: none; /* Remove the bullet points from the list */
-    margin: 0; /* Remove the margin from the list */
-    padding: 0; /* Remove the padding from the list */
-  }
-  
-  li {
-    font-size: 1.2em; /* Set the font size to 1.2em */
-    margin: 10px 0; /* Add a margin of 10px at the top and bottom of the list items */
-  }
-  
-  a {
-    color: #45a049; /* Set the color of the links to black */
-    text-decoration: none; /* Remove the underline from the links */
-    text-decoration: underline;
-  }
-  
-  a:hover {
-    color: #000; /* Set the color of the links on hover to grey */
-    text-decoration: underline;
-  }
-  
-  .donate-button {
-    
-    padding: 10px 20px; /* Add padding to the button */
-    border: none; /* Remove the border from the button */
-    border-radius: 4px; /* Add rounded corners to the button */
-    background-color: #262484; /* Set the background color of the button to green */
-    color: #FEDD04; /* Set the text color of the button to white */
-    font-size: 1.2em; /* Set the font size of the button to 1.2em */
-    text-align: center; /* Center the text of the button */
-    cursor: pointer; /* Change the cursor to a pointer when hovering over the button */
-    transition: background-color 0.3s ease-in-out;
+h1 {
+  text-align: center;
+  font-size: 30px;
+  font-weight: bold;
+  color: #E60023;
+  text-shadow: 2px 2px #FFFFFF; /* Changed text shadow color to white */
+  margin-top: 30px;
+  line-height: 1;
+  border: 3px solid #FFFFFF; /* Changed outer border to white */
+  outline: 5px solid #E60023; /* Inner border is now #E60023 */
+  padding: 5px;
+}
+
+p {
+  font-size: 1.2em; /* Set the font size to 1.2em */
+  line-height: 1.5; /* Set the line height to 1.5 */
+  margin: 20px 0; /* Add a margin of 20px at the top and bottom of the paragraphs */
+}
+
+ul {
+  list-style: none; /* Remove the bullet points from the list */
+  margin: 0; /* Remove the margin from the list */
+  padding: 0; /* Remove the padding from the list */
+}
+
+li {
+  font-size: 1.2em; /* Set the font size to 1.2em */
+  margin: 10px 0; /* Add a margin of 10px at the top and bottom of the list items */
+}
+
+a {
+  color: #45a049; /* Set the color of the links */
+  text-decoration: none; /* Remove the underline from the links */
+  text-decoration: underline;
+}
+
+a:hover {
+  color: #000; /* Set the color of the links on hover */
+  text-decoration: underline;
+}
+
+.donate-button {
+  padding: 10px 20px; /* Add padding to the button */
+  border: none; /* Remove the border from the button */
+  border-radius: 4px; /* Add rounded corners to the button */
+  background-color: #E60023; /* Set the background color */
+  color: #FFFFFF; /* Changed text color to white */
+  font-size: 1.2em; /* Set the font size of the button */
+  text-align: center; /* Center the text of the button */
+  cursor: pointer; /* Change the cursor to a pointer when hovering over the button */
+  transition: background-color 0.3s ease-in-out;
 }
 
 .donate-button:hover {
-    background-color: #FEDD04;
-    color: #262484;
-    transition: background-color 0.3s ease-in-out;
+  background-color: #FFFFFF; /* Changed hover background color to white */
+  color: #E60023; /* Changed hover text color to red */
+  transition: background-color 0.3s ease-in-out;
 }
 
 .donate-button:active,
 .donate-button:focus {
-    background-color: #262484;
-    color: #fff;
-    outline: none;
+  background-color: #E60023;
+  color: #FFFFFF; /* Changed active/focus text color to white */
+  outline: none;
 }
+
 /* Table Style */
 .styled-table {
-    border-collapse: collapse;
-    margin: 25px 0;
-    font-size: 1em;
-    font-family: sans-serif;
-    min-width: 400px;
-    box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
-    text-align: center;
+  border-collapse: collapse;
+  margin: 25px 0;
+  font-size: 1em;
+  font-family: sans-serif;
+  min-width: 400px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+  text-align: center;
 }
 
 .styled-table thead tr {
-    background-color: #262484;
-    color: #FEDD04;
-    text-align: left;
-    text-align: center;
+  background-color: #E60023;
+  color: #FFFFFF; /* Changed table header text color to white */
+  text-align: center;
 }
 
 .styled-table th,
 .styled-table td {
-    padding: 12px 15px;
+  padding: 12px 15px;
 }
+
 .styled-table tbody tr {
-    border-bottom: 1px solid #dddddd;
+  border-bottom: 1px solid #dddddd;
 }
 
 .styled-table tbody tr:nth-of-type(even) {
-    background-color: #f3f3f3;
+  background-color: #f3f3f3;
 }
 
 .styled-table tbody tr:last-of-type {
-    border-bottom: 2px solid #262484;
+  border-bottom: 2px solid #E60023;
 }
 
 .styled-table tbody tr.active-row {
-    font-weight: bold;
-    color: #262484;
+  font-weight: bold;
+  color: #E60023;
 }
-/* Bottom Buttons */
 
+/* Bottom Buttons */
 .button-aadmy-bottom-container {
-    text-align: center;
+  text-align: center;
 }
 
 a {
-    color: #262484;
-    text-decoration: none;
-  }
-  
-  a:hover {
-    color: #FEDD04;
-    text-decoration: underline;
-  }
-  
+  color: #E60023;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #FFFFFF; /* Changed hover color to white */
+  text-decoration: underline;
+}
 
 .button-aadmy-bottom {
-    display: inline-block;
-    padding: 10px 20px;
-    background-color: #262484;
-    color: #FEDD04;
-    text-decoration: none;
-    border-radius: 5px;
-    transition: background-color 0.3s ease-in-out;
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #E60023;
+  color: #FFFFFF; /* Changed button text color to white */
+  text-decoration: none;
+  border-radius: 5px;
+  transition: background-color 0.3s ease-in-out;
 }
 
 .button-aadmy-bottom:hover {
-    background-color: #FEDD04;
-    color: #262484;
-    transition: background-color 0.3s ease-in-out;
+  background-color: #FFFFFF; /* Changed button hover background color to white */
+  color: #E60023; /* Changed button hover text color to red */
+  transition: background-color 0.3s ease-in-out;
 }
 
 .button-aadmy-bottom:active,
 .button-aadmy-bottom:focus {
-    background-color: #262484;
-    color: #fff;
-    outline: none;
+  background-color: #E60023;
+  color: #FFFFFF; /* Changed button active/focus text color to white */
+  outline: none;
 }
-
-
