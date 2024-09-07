@@ -15,7 +15,7 @@ h1 {
   text-shadow: 2px 2px #FFFFFF; /* Changed text shadow color to white */
   margin-top: 30px;
   line-height: 1;
-  border: 3px solid #FFFFFF; /* Changed outer border to white */
+  border: 3px solid #000000; /* Changed outer border to white */
   outline: 5px solid #E60023; /* Inner border is now #E60023 */
   padding: 5px;
 }
@@ -61,7 +61,7 @@ a:hover {
 }
 
 .donate-button:hover {
-  background-color: #FFFFFF; /* Changed hover background color to white */
+  background-color: #000000; /* Changed hover background color to black */
   color: #E60023; /* Changed hover text color to red */
   transition: background-color 0.3s ease-in-out;
 }
@@ -112,6 +112,12 @@ a:hover {
   color: #E60023;
 }
 
+/* Table Cell Hover Effect */
+.styled-table tbody tr:hover td {
+  background-color: #E60023; /* Change cell background color on hover */
+  color: #FFFFFF; /* Change text color to white on hover */
+}
+
 /* Bottom Buttons */
 .button-aadmy-bottom-container {
   text-align: center;
@@ -123,7 +129,7 @@ a {
 }
 
 a:hover {
-  color: #FFFFFF; /* Changed hover color to white */
+  color: #000000; /* Changed hover color to black */
   text-decoration: underline;
 }
 
@@ -138,7 +144,7 @@ a:hover {
 }
 
 .button-aadmy-bottom:hover {
-  background-color: #000000; /* Changed button hover background color to white */
+  background-color: #000000; /* Changed button hover background color to black */
   color: #E60023; /* Changed button hover text color to red */
   transition: background-color 0.3s ease-in-out;
 }
