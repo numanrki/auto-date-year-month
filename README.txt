@@ -12,7 +12,7 @@ License: GPL3
 License URI: http://www.gnu.org/licenses/gpl-3.0.html
 
 
-**Short Description:** This plugin dynamically adds current dates, years, months, and other time-related elements to your WordPress posts and pages through shortcodes.
+**Short Description:** Automatically add dynamic dates, months, and years to your WordPress posts using shortcodes.
 
 == Description ==
 This WordPress plugin allows you to dynamically add current dates, years, months, and other time-related elements to your content. It helps to keep your content up-to-date and improve your SEO thus ensuring that your website's content is always fresh and relevant. With this plugin, you can easily add dynamic current time elements to your website without any coding knowledge.
