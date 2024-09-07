@@ -219,8 +219,7 @@ add_filter('comment_text', 'do_shortcode');
 // Media
 add_filter('the_content', 'do_shortcode');
 
-// User Profile
-add_action('show_user_profile', 'do_shortcode');
+
 
 // Archives
 add_filter('get_archives_link', 'do_shortcode');
@@ -233,60 +232,37 @@ add_filter('login_form', 'do_shortcode');
 add_filter('logout_url', 'do_shortcode');
 
 
-// Enable shortcodes in Elementor editor
-add_filter('elementor/editor/content/before_save', 'do_shortcode');
-add_filter('elementor/frontend/the_content', 'do_shortcode');
-add_filter('elementor_pro/editor/content/before_save', 'do_shortcode');
-add_filter('elementor_pro/frontend/the_content', 'do_shortcode');
+// Enable shortcodes in Elementor editor and frontend content
+add_action('elementor/widget/render_content', function($content, $widget) {
+  return do_shortcode($content);
+}, 10, 2);
 
-
-// Enable shortcodes in Elementor editor for basic elements
-add_filter('elementor/editor/content/before_save', 'do_shortcode');
-add_filter('elementor/frontend/the_content', 'do_shortcode');
-add_filter('elementor_pro/editor/content/before_save', 'do_shortcode');
-add_filter('elementor_pro/frontend/the_content', 'do_shortcode');
-
-// Enable shortcodes in Elementor editor for specific elements
-add_filter('elementor/widget/text_content', 'do_shortcode');
+// Enable shortcodes for specific Elementor elements/widgets
+add_filter('elementor/widget/text-editor/parse_text', 'do_shortcode');
 add_filter('elementor/widget/shortcode/render', 'do_shortcode');
-add_filter('elementor/element/post_excerpt_text', 'do_shortcode');
-add_filter('elementor/element/post_content', 'do_shortcode');
-add_filter('elementor/element/post_title/style_typography_render', 'do_shortcode');
-add_filter('elementor/element/heading/section_typography_render', 'do_shortcode');
-add_filter('elementor/element/heading/style_typography_render', 'do_shortcode');
-add_filter('elementor/element/heading_text', 'do_shortcode');
-add_filter('elementor/element/text-editor/text_content', 'do_shortcode');
-add_filter('elementor/element/shortcode/render', 'do_shortcode');
-add_filter('elementor/element/section/columns', 'do_shortcode');
-add_filter('elementor/element/section/column_content', 'do_shortcode');
-add_filter('elementor/element/section/column_text', 'do_shortcode');
-add_filter('elementor/element/section/text_content', 'do_shortcode');
-add_filter('elementor/element/section_icon_list_items', 'do_shortcode');
-add_filter('elementor/element/section_icon_list_icon_text', 'do_shortcode');
-add_filter('elementor/element/icon-list/text_content', 'do_shortcode');
-add_filter('elementor/element/icon-list-item/text_content', 'do_shortcode');
 
-// Add more filters for other Elementor elements as needed
+// Apply shortcodes to general Elementor frontend content
+add_filter('elementor/frontend/the_content', 'do_shortcode');
 
 
-// Filter Added for SEOPress Plugin 
+
+
+
+// SEOPress Plugin: Ensure shortcodes work in SEO titles and descriptions
 add_filter('seopress_titles_title', 'do_shortcode');
 add_filter('seopress_titles_desc', 'do_shortcode');
 
-// Filter Added for Yoast SEO Plugin
+// Yoast SEO Plugin: Ensure shortcodes work in SEO titles and meta descriptions
 add_filter('wpseo_title', 'do_shortcode');
 add_filter('wpseo_metadesc', 'do_shortcode');
 
-// Filter Added For Rank Math SEO Plugin
-function process_shortcodes_in_rank_math_title($title) {
-  return do_shortcode($title);
+// Rank Math SEO Plugin: Ensure shortcodes work in titles and descriptions
+function process_shortcodes_in_rank_math($content) {
+    return do_shortcode($content);
 }
-add_filter('rank_math/frontend/title', 'process_shortcodes_in_rank_math_title', 20); // Increased priority
+add_filter('rank_math/frontend/title', 'process_shortcodes_in_rank_math', 20);
+add_filter('rank_math/frontend/description', 'process_shortcodes_in_rank_math', 20);
 
-function process_shortcodes_in_rank_math_description($description) {
-  return do_shortcode($description);
-}
-add_filter('rank_math/frontend/description', 'process_shortcodes_in_rank_math_description', 20); // Increased priority
 
 
 
