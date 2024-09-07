@@ -1,6 +1,7 @@
-body{
+body {
   background-color: white;
 }
+
 .welcome-page-wrap {
   width: 80%; /* Set the width of the welcome page to 80% */
   margin: 0 auto; /* Center the welcome page */
@@ -112,11 +113,7 @@ a:hover {
   color: #E60023;
 }
 
-/* Table Cell Hover Effect */
-.styled-table tbody tr:hover td {
-  background-color: #E60023; /* Change cell background color on hover */
-  color: #FFFFFF; /* Change text color to white on hover */
-}
+/* Removed Table Cell Hover Effect */
 
 /* Bottom Buttons */
 .button-aadmy-bottom-container {
@@ -155,3 +152,13 @@ a:hover {
   color: #FFFFFF; /* Changed button active/focus text color to white */
   outline: none;
 }
+
+/* Copy Link Styling */
+.copy-link {
+  color: #E60023; /* Set the main color for the link */
+  text-decoration: underline;
+  cursor: pointer;
+  transition: color 0.3s ease, background-color 0.3s ease;
+}
+
+
