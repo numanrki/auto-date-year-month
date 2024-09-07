@@ -81,7 +81,6 @@
       
       <p>For more information and usage examples, you can visit our <strong><a class="underlined-link" href="https://bit.ly/AadmyGuide" target="_blank">plugin page</a></strong>.</p>
       <p>If you find this plugin useful, please consider buying us a coffee as a token of your appreciation. We rely on donations to keep our plugin development going and your support is greatly appreciated.</p>
-      <a class="donate-button" href="https://bit.ly/aadmyCoffee" target="_blank">Buy me a coffee</a>
     </div>
 
     <div class="button-aadmy-bottom-container">
@@ -89,10 +88,12 @@
         $aadmy_support_url = 'https://wordpress.org/support/plugin/auto-date-year-month/';
         $aadmy_review_url = 'https://wordpress.org/support/plugin/auto-date-year-month/reviews/#new-post';
         $aadmy_plugin_url = 'https://bit.ly/AadmyGuide';
-        $aadmy_version = constant('Auto_Date_Year_Month_AADMY');
         $facebook_follow_url = 'https://www.facebook.com/aadmyWP'; // Add Facebook page URL here
       ?>
       
+      <a href="https://www.buymeacoffee.com/numanrki"><img src="https://img.buymeacoffee.com/button-api/?text=Buy me a coffee&emoji=☕&slug=numanrki&button_colour=ff0027&font_colour=ffffff&font_family=Cookie&outline_colour=ffffff&coffee_colour=FFDD00" /></a>
+      <br>
+      <br>
       <a href="<?php echo $aadmy_support_url; ?>" target="_blank" class="button-aadmy-bottom">Support</a>
       <a href="<?php echo $aadmy_review_url; ?>" target="_blank" class="button-aadmy-bottom">Leave Review</a>
       <a href="<?php echo $aadmy_plugin_url; ?>" target="_blank" class="button-aadmy-bottom">Plugin Page</a>
