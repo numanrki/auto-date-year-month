@@ -1,12 +1,12 @@
 === AADMY - Add Auto Date Month Year Into Posts ===
-Contributors: numanrki, sallubhatti2, arslanrki
-Tags: SEO, current year, year, shortcode, current year shortcode, copyright, copyright shortcode, trademark, copyright symbol, trademark shortcode, trademark symbol, symbol shortcode
+Contributors: numanrki, sallubhatti2
+Tags: SEO, current year, year, shortcode, current year shortcode
 Author URI: https://wordpress.org/plugins/auto-date-year-month/
 Author: https://numanrki.com
 Donate link: https://bit.ly/aadmyCoffee
 Requires at least: 5.0
 Tested up to: 6.6.1
-Stable tag: 1.1.9
+Stable tag: 2.0.0
 Requires PHP: 7.0
 License: GPL3
 License URI: http://www.gnu.org/licenses/gpl-3.0.html
