@@ -282,3 +282,8 @@ include( plugin_dir_path( __FILE__ ) . 'aadmy-includes/aadmy-menu.php' );
    }
    return $links;
  }
+
+
+ // Include the donation notice
+ include( plugin_dir_path(__FILE__) . 'aadmy-includes/aadmy-notices/aadmy-donation.php' );
+
