@@ -6,7 +6,7 @@ Author: https://numanrki.com
 Donate link: https://bit.ly/aadmyCoffee
 Requires at least: 5.0
 Tested up to: 6.6.1
-Stable tag: 2.0.0
+Stable tag: 2.0.1
 Requires PHP: 7.0
 License: GPL3
 License URI: http://www.gnu.org/licenses/gpl-3.0.html
@@ -134,6 +134,13 @@ To add a date to your WordPress posts, you can use the shortcode [today], which 
 4. output of shortcodes
 
 == Changelog ==
+
+= Version 2.0.1 =
+Release Date: **September 14, 2024**
+
+**Update:** AADMY logo added to the welcome screen for a better visual introduction.
+**Requirement:** PHP 7.4 or higher is required for this version.
+
 
 = Version 2.0.0 =
 Release Date: **September 14, 2024**

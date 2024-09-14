@@ -1,5 +1,11 @@
 == Changelog ==
 
+= Version 2.0.1 =
+Release Date: **September 14, 2024**
+
+**Update:** AADMY logo added to the welcome screen for a better visual introduction.
+**Requirement:** PHP 7.4 or higher is required for this version.
+
 = Version 2.0.0 =
 Release Date: **September 14, 2024**
 
