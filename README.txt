@@ -15,7 +15,7 @@ License URI: http://www.gnu.org/licenses/gpl-3.0.html
 **Short Description:** Automatically add dynamic dates, months, and years to your WordPress posts using shortcodes.
 
 == Description ==
-AADMY keeps your content fresh with the current day, date, month, and year, enhancing SEO and audience trust.
+This WordPress plugin allows you to dynamically add current dates, years, months, and other time-related elements to your content. It helps to keep your content up-to-date and improve your SEO thus ensuring that your website's content is always fresh and relevant. With this plugin, you can easily add dynamic current time elements to your website without any coding knowledge.
 
 * This plugin adds the following short codes to your WordPress Blog/Site:
 
@@ -68,7 +68,7 @@ Call Shortcodes with PHP
 * Use this: **echo do_shortcode('[shortcode_name]');**
 
 == Compatibility ==
-* This plugin is compatible with WordPress versions 4.7 and higher, as well as with any WordPress theme.
+* This plugin is compatible with WordPress versions 6.0 and higher, as well as with any WordPress theme.
 
 == Full Guide ==
 * For more information and usage examples, you can visit our [plugin page](https://numanrki.com/aadmy-wordpress-plugin/).
@@ -103,8 +103,7 @@ Call Shortcodes with PHP
 
 * Here are some of the highlights of this update:
 
-* Feature 1: Dynamically Add Current Date, Day, Month, Year 
-* Bug fix: Fix the Output and set it to localized
+
 
 == Frequently Asked Questions ==
 
