@@ -135,6 +135,16 @@ To add a date to your WordPress posts, you can use the shortcode [today], which 
 
 == Changelog ==
 
+= Version 2.0.0 =
+Release Date: **September 14, 2024**
+
+**Bug Fixes:** Resolved known issues to enhance performance and stability.
+**New Feature:** Added a donation notice to encourage community support.
+**Tag Limitation Fixed:** One or more tags (copyright, copyright shortcode, trademark, copyright symbol, trademark shortcode, trademark symbol, symbol shortcode) were previously ignored. The issue has been resolved by adhering to the 5-tag limit.
+**Contributors Fixed:** An unrecognized WordPress.org username was previously ignored. This issue has now been corrected in the Contributors field.
+**Short Description Fixed:** The Short Description section, which was missing, has now been properly added to replace the auto-generated excerpt.
+
+
 = 1.1.9 =
 Updated on: September 7, 2024
 
