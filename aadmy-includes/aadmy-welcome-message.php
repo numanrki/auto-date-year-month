@@ -7,7 +7,7 @@
   
   <body>
     <div class="welcome-page-wrap">
-    <div style="text-align: center;">
+    <div style="text-align: center; margin-bottom: -35px;">
     <img src="<?php echo plugins_url('/aadmy-assets/logos/aadmy-logo.svg', dirname(__FILE__)); ?>" alt="AADMY Logo">
 </div>
       <h1>Welcome to the AADMY Add Auto Date Month Year Plugin</h1>
