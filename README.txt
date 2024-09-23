@@ -97,11 +97,7 @@ Call Shortcodes with PHP
 
 == Upgrade Notice ==
 
-* Attention users of the (AADMY) Add Auto Date Month Year In Posts Dynamically plugin!
-
-* We are excited to announce that a new version of our plugin is now available for upgrade. This update includes several new features and bug fixes to improve the overall performance of the plugin.
-
-* Here are some of the highlights of this update:
+* **Security fix:** sanitized session variables in `copy` and `paste` shortcodes to prevent input vulnerabilities.
 
 
 
