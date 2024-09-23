@@ -12,10 +12,11 @@ add_shortcode('st', 'shortcode_get_domain_name_aadmy');
 
 // Add Copy Rights 
 function copyright_symbol_shortcode_aadmy() {
-  $copy_year = date('Y');
+  $copy_year = gmdate('Y');
   return '&copy; ' . $copy_year . ' ' . do_shortcode('[st]') . ' -' . ' All Rights Reserved.';
 }
-  add_shortcode('fcr', 'copyright_symbol_shortcode_aadmy');
+add_shortcode('fcr', 'copyright_symbol_shortcode_aadmy');
+
 
   // Add Copy Rights Symbol
   function copy_symbol_shortcode_aadmy() {
@@ -52,11 +53,11 @@ function get_current_age_aadmy($atts) {
   $dob = $atts['dob'];
 
   // Convert the input date to the correct format (mm/dd/yyyy)
-  $dob_formatted = date("m/d/Y", strtotime($dob));
+  $dob_formatted = gmdate("m/d/Y", strtotime($dob));
 
   // Calculate the difference between the provided DOB and current date
-  $age = date('Y') - date('Y', strtotime($dob_formatted));
-  if (date('md') < date('md', strtotime($dob_formatted))) {
+  $age = gmdate('Y') - gmdate('Y', strtotime($dob_formatted));
+  if (gmdate('md') < gmdate('md', strtotime($dob_formatted))) {
     $age--;
   }
   
@@ -64,6 +65,7 @@ function get_current_age_aadmy($atts) {
   return $age . " Years";
 }
 add_shortcode('age', 'get_current_age_aadmy');
+
 
 
 
@@ -105,33 +107,47 @@ add_shortcode('aadmy_event', 'aadmy_event_time_elapsed_shortcode');
 // @return string An empty string for the 'copy' shortcode and the saved value for the 'paste' shortcode.
 
 // Define the copy shortcode
+// Define the copy shortcode
 function copy_shortcode_aadmy($atts, $content = null) {
-    extract(shortcode_atts(array(
-        'name' => '',
-        'value' => '',
-    ), $atts));
-    
-    // Save the value to a session variable with the given name
-    $_SESSION[$name] = $value;
-    
-    // Return an empty string
-    return '';
+  // Extract and sanitize shortcode attributes
+  $atts = shortcode_atts(array(
+      'name' => '',
+      'value' => '',
+  ), $atts);
+
+  // Sanitize the name and value before using
+  $name = sanitize_key($atts['name']); // Sanitize as key for session
+  $value = sanitize_text_field($atts['value']); // Sanitize value for text input
+  
+  // Save the sanitized value to the session variable with the sanitized name
+  if (!empty($name)) {
+      $_SESSION[$name] = $value;
+  }
+
+  // Return an empty string
+  return '';
 }
 add_shortcode('copy', 'copy_shortcode_aadmy');
 
+
+
+
 // Define the paste shortcode
 function paste_shortcode_aadmy($atts, $content = null) {
-    extract(shortcode_atts(array(
-        'name' => '',
-    ), $atts));
-    
-    // Retrieve the value from the session variable with the given name
-    $value = isset($_SESSION[$name]) ? $_SESSION[$name] : '';
-    
-    // Return the value
-    return $value;
-}
+  // Extract and sanitize shortcode attributes
+  $atts = shortcode_atts(array(
+      'name' => '',
+  ), $atts);
 
+  // Sanitize the name
+  $name = sanitize_key($atts['name']); // Sanitize as key for session
+
+  // Retrieve the sanitized value from the session variable with the sanitized name
+  $value = isset($_SESSION[$name]) ? sanitize_text_field($_SESSION[$name]) : '';
+  
+  // Return the sanitized value
+  return $value;
+}
 add_shortcode('paste', 'paste_shortcode_aadmy');
 
 // Setting Shortcodes for Copy

@@ -135,10 +135,12 @@ To add a date to your WordPress posts, you can use the shortcode [today], which 
 == Changelog ==
 
 = Version 2.0.1 =
-Release Date: **September 14, 2024**
+Release Date: **September 23, 2024**
 
 **Update:** AADMY logo added to the welcome screen for a better visual introduction.
 **Requirement:** PHP 7.4 or higher is required for this version.
+**Fixed security issue:** by sanitizing session variables in `copy` and `paste` shortcodes using `sanitize_key()` and `sanitize_text_field()` to prevent unsanitized input vulnerabilities.
+
 
 
 = Version 2.0.0 =
