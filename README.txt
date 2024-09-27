@@ -14,6 +14,12 @@ License URI: http://www.gnu.org/licenses/gpl-3.0.html
 
 **Short Description:** Automatically add dynamic dates, months, and years to your WordPress posts using shortcodes.
 
+== Test AADMY Before You Install! ==
+
+Want to see how this plugin works before installing it on your site?  
+[Try this plugin on our dummy site](https://tastewp.org/plugins/auto-date-year-month/) to explore its features and functionality in a live environment.
+
+
 == Description ==
 This WordPress plugin allows you to dynamically add current dates, years, months, and other time-related elements to your content. It helps to keep your content up-to-date and improve your SEO thus ensuring that your website's content is always fresh and relevant. With this plugin, you can easily add dynamic current time elements to your website without any coding knowledge.
 
@@ -131,12 +137,12 @@ To add a date to your WordPress posts, you can use the shortcode [today], which 
 == Changelog ==
 
 = Version 2.0.1 =
-Release Date: **September 23, 2024**
+Release Date: **September 27, 2024**
 
 **Update:** AADMY logo added to the welcome screen for a better visual introduction.
 **Requirement:** PHP 7.4 or higher is required for this version.
 **Fixed security issue:** by sanitizing session variables in `copy` and `paste` shortcodes using `sanitize_key()` and `sanitize_text_field()` to prevent unsanitized input vulnerabilities.
-
+**Plugin Try feature added:** Included a link to a live dummy site for users to test the plugin before installation.
 
 
 = Version 2.0.0 =

@@ -6,6 +6,7 @@ Release Date: **September 23, 2024**
 **Update:** AADMY logo added to the welcome screen for a better visual introduction.
 **Requirement:** PHP 7.4 or higher is required for this version.
 **Fixed security issue:** by sanitizing session variables in `copy` and `paste` shortcodes using `sanitize_key()` and `sanitize_text_field()` to prevent unsanitized input vulnerabilities.
+**Plugin Try feature added:** Included a link to a live dummy site for users to test the plugin before installation.
 
 = Version 2.0.0 =
 Release Date: **September 14, 2024**
