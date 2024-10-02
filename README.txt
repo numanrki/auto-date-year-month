@@ -1,6 +1,6 @@
 === AADMY - Add Auto Date Month Year Into Posts ===
 Contributors: numanrki, sallubhatti2
-Tags: SEO, current year, year, shortcode, current year shortcode, dynamic date elements, seo improvement, shortcode creation, date offset, copyright display, site title display, post date display, age calculation, php shortcode calling
+Tags: SEO, current year, year, shortcode, current year shortcode
 Author URI: https://wordpress.org/plugins/auto-date-year-month/
 Author: https://numanrki.com
 Donate link: https://bit.ly/aadmyCoffee
