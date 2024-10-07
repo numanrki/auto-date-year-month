@@ -64,6 +64,8 @@ define( 'Auto_Date_Year_Month_AADMY', '2.0.2' );
 // Include the offsets file
 include_once( plugin_dir_path( __FILE__ ) . 'aadmy-shortcodes/aadmy-offsets.php' );
 include_once( plugin_dir_path( __FILE__ ) . 'aadmy-shortcodes/aadmy-other-functions.php' );
+include_once( plugin_dir_path( __FILE__ ) . 'aadmy-shortcodes/aadmy-countdown.php' );
+
 
 // //Other Functions to process
 // require 'other-functions.php';

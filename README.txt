@@ -45,6 +45,19 @@ This WordPress plugin allows you to dynamically add current dates, years, months
 3. **[offset date="1"]** will display the next date based on the user's timezone. Example output: **"May 6, 2023"**.
 4. **[offset date="365"]** will display the date one year from the current date based on the user's timezone. Example output: **"May 5, 2024"**.
 
+
+== Countdown short and Countdown ==
+* These shortcodes will display a live countdown to a specified date, either in a compact or detailed format, based on the shortcode used. The countdowns will update in real-time, showing the remaining time until the target date provided by the user.
+Usage:
+**[cdown_short date="mm/dd/yyyy"]:** Displays the countdown in a short format (e.g., "84d, 7h, 26m, 38s").
+**[countdown date="mm/dd/yyyy"]:** Displays the countdown in a full format (e.g., "84 days, 7 hours, 26 minutes, 38 seconds").
+**Examples:**
+**[cdown_short date="12/31/2024"]:** Shows the time remaining until December 31, 2024, in a short format: "84d, 7h, 26m, 38s".
+**[countdown date="12/31/2024"]:** Shows the time remaining until December 31, 2024, in a detailed format: "84 days, 7 hours, 26 minutes, 38 seconds".
+**[cdown_short date="06/01/2025"]:** Displays the time left until June 1, 2025, in a short format.
+**[countdown date="06/01/2025"]:** Displays the time left until June 1, 2025, in a detailed format.
+
+
 Note that the date format is "F j, Y" (e.g. "May 5, 2023"). You can modify this format by editing the `show_previous_dates()` function in the `functions.php` file.
 
 == Other Shortcodes ==
@@ -135,6 +148,16 @@ To add a date to your WordPress posts, you can use the shortcode [today], which 
 4. output of shortcodes
 
 == Changelog ==
+
+= Version 2.0.3 = 
+
+Release Date: **October 7, 2024**
+
+New Features:
+
+**Added [cdown_short]** shortcode for a compact countdown format (e.g., "84d, 7h, 26m, 38s").
+**Added [countdown]** shortcode for a detailed countdown format (e.g., "84 days, 7 hours, 26 minutes, 38 seconds").
+
 
 = Version 2.0.1 =
 Release Date: **September 27, 2024**
