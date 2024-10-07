@@ -51,11 +51,22 @@ This WordPress plugin allows you to dynamically add current dates, years, months
 Usage:
 **[cdown_short date="mm/dd/yyyy"]:** Displays the countdown in a short format (e.g., "84d, 7h, 26m, 38s").
 **[countdown date="mm/dd/yyyy"]:** Displays the countdown in a full format (e.g., "84 days, 7 hours, 26 minutes, 38 seconds").
+
 **Examples:**
+
 **[cdown_short date="12/31/2024"]:** Shows the time remaining until December 31, 2024, in a short format: "84d, 7h, 26m, 38s".
 **[countdown date="12/31/2024"]:** Shows the time remaining until December 31, 2024, in a detailed format: "84 days, 7 hours, 26 minutes, 38 seconds".
 **[cdown_short date="06/01/2025"]:** Displays the time left until June 1, 2025, in a short format.
 **[countdown date="06/01/2025"]:** Displays the time left until June 1, 2025, in a detailed format.
+
+* Shortcodes to display live countdowns in a short or detailed format, depending on user input.
+**[custom_countdown_short hours="value"]:** Countdown in a compact format (e.g., 2d, 5h, 30m, 45s).
+**[custom_countdown_full hours="value"]:** Countdown in a full format (e.g., 2 days, 5 hours, 30 minutes, 45 seconds).
+
+**Examples:**
+
+**[custom_countdown_short hours="48"]:** Displays 2d, 0h, 0m, 0s.
+**[custom_countdown_full hours="12"]:** Displays 0 days, 12 hours, 0 minutes, 0 seconds.
 
 
 Note that the date format is "F j, Y" (e.g. "May 5, 2023"). You can modify this format by editing the `show_previous_dates()` function in the `functions.php` file.
@@ -116,8 +127,7 @@ Call Shortcodes with PHP
 
 == Upgrade Notice ==
 
-* **Security fix:** sanitized session variables in `copy` and `paste` shortcodes to prevent input vulnerabilities.
-
+* **What's new:** added new shortcodes for countdown with detailed and compact formats to display time in days, hours, minutes, and seconds.
 
 
 == Frequently Asked Questions ==
@@ -149,14 +159,16 @@ To add a date to your WordPress posts, you can use the shortcode [today], which 
 
 == Changelog ==
 
-= Version 2.0.3 = 
+= Version 2.0.2 = 
 
-Release Date: **October 7, 2024**
+Release Date: **October 8, 2024**
 
 New Features:
 
 **Added [cdown_short]** shortcode for a compact countdown format (e.g., "84d, 7h, 26m, 38s").
 **Added [countdown]** shortcode for a detailed countdown format (e.g., "84 days, 7 hours, 26 minutes, 38 seconds").
+**Added [custom_countdown_short]** shortcode for a compact countdown format (e.g., 2d, 5h, 30m, 45s). 
+**Added [custom_countdown_full]** shortcode for a detailed countdown format (e.g., 2 days, 5 hours, 30 minutes, 45 seconds).
 
 
 = Version 2.0.1 =
