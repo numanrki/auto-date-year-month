@@ -3,8 +3,10 @@
   $css_path = plugins_url( '/css/addmy-style.css', __FILE__ );
   $js_path = plugins_url( '/js/aadmy-script.js', __FILE__ ); // Path to the JS file
 ?>
-  <link rel="stylesheet" type="text/css" href="<?php echo $css_path; ?>">
-  
+<link rel="stylesheet" type="text/css" href="<?php echo $css_path; ?>">
+
+
+
   <body>
     <div class="welcome-page-wrap">
     <div style="text-align: center; margin-bottom: -35px;">
