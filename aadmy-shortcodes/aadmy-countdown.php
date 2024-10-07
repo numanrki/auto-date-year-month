@@ -1,6 +1,6 @@
 <?php
 
-// Countdown Full shortocde function
+// Countdown Full shortcode function
 function aadmy_countdown($atts) {
     // Extract the 'date' attribute and ensure the user provides it
     $attributes = shortcode_atts(array(
@@ -9,20 +9,21 @@ function aadmy_countdown($atts) {
 
     // Check if the user provided a date
     if (empty($attributes['date'])) {
-        return "Error: Please provide a valid date.";
+        return __('Error: Please provide a valid date.', 'aadmy-plugin');
     }
 
-    // Get the target date from user input
+    // Get the target date from user input and localize it
     $target_date = new DateTime($attributes['date']);
-    $target_timestamp = $target_date->getTimestamp() * 1000; // Convert to milliseconds for JavaScript
+    $target_date_localized = date_i18n(get_option('date_format') . ' ' . get_option('time_format'), $target_date->getTimestamp());
+    $target_timestamp = $target_date->getTimestamp(); // Get timestamp in seconds
 
     // Output HTML with JavaScript-enabled countdown container
     return '
-        <div id="aadmy-countdown" data-target="' . $target_timestamp . '"></div>
+        <div id="aadmy-countdown" data-target="' . $target_timestamp . '" data-localized-date="' . esc_attr($target_date_localized) . '"></div>
         <script>
             (function() {
                 var countdown = document.getElementById("aadmy-countdown");
-                var targetDate = countdown.getAttribute("data-target");
+                var targetDate = parseInt(countdown.getAttribute("data-target"), 10) * 1000; // Convert to milliseconds
 
                 function updateCountdown() {
                     var now = new Date().getTime();
@@ -35,12 +36,12 @@ function aadmy_countdown($atts) {
                     var seconds = Math.floor((timeLeft % (1000 * 60)) / 1000);
 
                     // Display the result in full format
-                    countdown.innerHTML = days + " days, " + hours + " hours, " + minutes + " minutes, " + seconds + " seconds";
+                    countdown.innerHTML = days + " " + "' . __('days', 'aadmy-plugin') . '" + ", " + hours + " " + "' . __('hours', 'aadmy-plugin') . '" + ", " + minutes + " " + "' . __('minutes', 'aadmy-plugin') . '" + ", " + seconds + " " + "' . __('seconds', 'aadmy-plugin') . '";
 
                     // If the countdown is over, display a message
                     if (timeLeft < 0) {
                         clearInterval(countdownTimer);
-                        countdown.innerHTML = "The countdown has ended!";
+                        countdown.innerHTML = "' . __('The countdown has ended!', 'aadmy-plugin') . '";
                     }
                 }
 
@@ -55,7 +56,7 @@ function aadmy_countdown($atts) {
 add_shortcode('countdown', 'aadmy_countdown');
 
 
-// Countdown Short Function 
+// Countdown Short Function
 function aadmy_countdown_simple($atts) {
     // Extract the 'date' attribute and ensure the user provides it
     $attributes = shortcode_atts(array(
@@ -64,20 +65,21 @@ function aadmy_countdown_simple($atts) {
 
     // Check if the user provided a date
     if (empty($attributes['date'])) {
-        return "Error: Please provide a valid date.";
+        return __('Error: Please provide a valid date.', 'aadmy-plugin');
     }
 
-    // Get the target date from user input
+    // Get the target date from user input and localize it
     $target_date = new DateTime($attributes['date']);
-    $target_timestamp = $target_date->getTimestamp() * 1000; // Convert to milliseconds for JavaScript
+    $target_date_localized = date_i18n(get_option('date_format') . ' ' . get_option('time_format'), $target_date->getTimestamp());
+    $target_timestamp = $target_date->getTimestamp(); // Get timestamp in seconds
 
     // Output HTML with JavaScript-enabled countdown container
     return '
-        <div id="aadmy-simple-countdown" data-target="' . $target_timestamp . '"></div>
+        <div id="aadmy-simple-countdown" data-target="' . $target_timestamp . '" data-localized-date="' . esc_attr($target_date_localized) . '"></div>
         <script>
             (function() {
                 var countdown = document.getElementById("aadmy-simple-countdown");
-                var targetDate = countdown.getAttribute("data-target");
+                var targetDate = parseInt(countdown.getAttribute("data-target"), 10) * 1000; // Convert to milliseconds
 
                 function updateSimpleCountdown() {
                     var now = new Date().getTime();
@@ -95,7 +97,7 @@ function aadmy_countdown_simple($atts) {
                     // If the countdown is over, display a message
                     if (timeLeft < 0) {
                         clearInterval(countdownTimer);
-                        countdown.innerHTML = "The countdown has ended!";
+                        countdown.innerHTML = "' . __('The countdown has ended!', 'aadmy-plugin') . '";
                     }
                 }
 
