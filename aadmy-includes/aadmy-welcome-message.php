@@ -10,7 +10,7 @@
   <body>
     <div class="welcome-page-wrap">
     <div style="text-align: center; margin-bottom: -35px;">
-    <img src="<?php echo plugins_url('/aadmy-assets/logos/aadmy-logo.svg', dirname(__FILE__)); ?>" alt="AADMY Logo">
+    <a href="https://wordpress.org/plugins/auto-date-year-month/" target="_blank"><img src="<?php echo plugins_url('/aadmy-assets/logos/aadmy-logo.svg', dirname(__FILE__)); ?>" alt="AADMY Logo"></a>
 </div>
       <h1>Welcome to the AADMY Add Auto Date Month Year Plugin</h1>
       <p>Thank you for installing our plugin. With this plugin, you can easily add auto dates, months, and years to your WordPress posts and pages using shortcodes. Some of the shortcodes that you can use include:</p>
