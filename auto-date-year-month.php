@@ -2,7 +2,7 @@
 /*
  * Plugin Name: AADMY - Add Auto Date Month Year Into Posts
  * Plugin URI: https://wordpress.org/plugins/auto-date-year-month/
- * Description: This WordPress plugin allows you to dynamically add current dates, years, months, and other time-related elements to your content.
+ * Description: Easily boost your SEO by dynamically adding current dates, months, and years to your WordPress posts, pages, keeping your content fresh without manual updates.
  * Version: 2.0.2
  * Requires at least: 6.0
  * Tested up to: 6.6.2
