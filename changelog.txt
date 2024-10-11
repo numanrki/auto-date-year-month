@@ -1,15 +1,19 @@
 == Changelog ==
 
-= Version 2.0.2 = 
+= Version 2.0.2 =
 
-Release Date: **October 8, 2024**
+Release Date: **October 12, 2024**
 
 New Features:
+- **Added [cdown_short]** shortcode for a compact countdown format (e.g., "84d, 7h, 26m, 38s").
+- **Added [countdown]** shortcode for a detailed countdown format (e.g., "84 days, 7 hours, 26 minutes, 38 seconds").
+- **Added [custom_countdown_short]** shortcode for a compact countdown format (e.g., 2d, 5h, 30m, 45s).
+- **Added [custom_countdown_full]** shortcode for a detailed countdown format (e.g., 2 days, 5 hours, 30 minutes, 45 seconds).
 
-**Added [cdown_short]** shortcode for a compact countdown format (e.g., "84d, 7h, 26m, 38s").
-**Added [countdown]** shortcode for a detailed countdown format (e.g., "84 days, 7 hours, 26 minutes, 38 seconds").
-**Added [custom_countdown_short]** shortcode for a compact countdown format (e.g., 2d, 5h, 30m, 45s). 
-**Added [custom_countdown_full]** shortcode for a detailed countdown format (e.g., 2 days, 5 hours, 30 minutes, 45 seconds).
+Security Fix:
+- **Fixed vulnerability** allowing arbitrary shortcode execution in comments by unauthorized users. Shortcodes are now disabled in comments, and only authorized users (Contributor+ roles) can execute them. User input is sanitized and output is escaped for enhanced security.
+  
+Special thanks to **Francesco Carlucci** for responsibly disclosing this vulnerability.
 
 
 = Version 2.0.1 =

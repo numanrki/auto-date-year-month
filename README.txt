@@ -127,8 +127,7 @@ Call Shortcodes with PHP
 
 == Upgrade Notice ==
 
-* **What's new:** added new shortcodes for countdown with detailed and compact formats to display time in days, hours, minutes, and seconds.
-
+**What's new:** Added new shortcodes for countdowns with both detailed and compact formats, allowing you to display time in days, hours, minutes, and seconds. This release also includes important security fixes to prevent unauthorized shortcode execution in comments.
 
 == Frequently Asked Questions ==
 
@@ -159,16 +158,20 @@ To add a date to your WordPress posts, you can use the shortcode [today], which 
 
 == Changelog ==
 
-= Version 2.0.2 = 
+= Version 2.0.2 =
 
-Release Date: **October 8, 2024**
+Release Date: **October 12, 2024**
 
 New Features:
+- **Added [cdown_short]** shortcode for a compact countdown format (e.g., "84d, 7h, 26m, 38s").
+- **Added [countdown]** shortcode for a detailed countdown format (e.g., "84 days, 7 hours, 26 minutes, 38 seconds").
+- **Added [custom_countdown_short]** shortcode for a compact countdown format (e.g., 2d, 5h, 30m, 45s).
+- **Added [custom_countdown_full]** shortcode for a detailed countdown format (e.g., 2 days, 5 hours, 30 minutes, 45 seconds).
 
-**Added [cdown_short]** shortcode for a compact countdown format (e.g., "84d, 7h, 26m, 38s").
-**Added [countdown]** shortcode for a detailed countdown format (e.g., "84 days, 7 hours, 26 minutes, 38 seconds").
-**Added [custom_countdown_short]** shortcode for a compact countdown format (e.g., 2d, 5h, 30m, 45s). 
-**Added [custom_countdown_full]** shortcode for a detailed countdown format (e.g., 2 days, 5 hours, 30 minutes, 45 seconds).
+Security Fix:
+- **Fixed vulnerability** allowing arbitrary shortcode execution in comments by unauthorized users. Shortcodes are now disabled in comments, and only authorized users (Contributor+ roles) can execute them. User input is sanitized and output is escaped for enhanced security.
+  
+Special thanks to **Francesco Carlucci** for responsibly disclosing this vulnerability.
 
 
 = Version 2.0.1 =
