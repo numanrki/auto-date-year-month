@@ -247,7 +247,11 @@ add_filter('elementor/widget/shortcode/render', 'do_shortcode');
 // Apply shortcodes to general Elementor frontend content
 add_filter('elementor/frontend/the_content', 'do_shortcode');
 
+// Disable shortcodes in comments to prevent execution
+remove_filter('comment_text', 'do_shortcode');
 
+// Sanitize comment content to remove shortcodes and HTML tags
+add_filter('pre_comment_content', 'wp_strip_all_tags');
 
 
 
