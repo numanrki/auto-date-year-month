@@ -1,6 +1,6 @@
 === AADMY - Add Auto Date Month Year Into Posts ===
 Contributors: numanrki, sallubhatti2
-Tags: SEO, current year, year, shortcode, current year shortcode
+Tags: content, marketing, seo, shortcode, writing
 Author URI: https://wordpress.org/plugins/auto-date-year-month/
 Author: https://numanrki.com
 Donate link: https://bit.ly/aadmyCoffee
@@ -160,7 +160,7 @@ To add a date to your WordPress posts, you can use the shortcode [today], which 
 
 = Version 2.0.2 =
 
-Release Date: **October 12, 2024**
+Release Date: **October 13, 2024**
 
 New Features:
 - **Added [cdown_short]** shortcode for a compact countdown format (e.g., "84d, 7h, 26m, 38s").

@@ -2,7 +2,7 @@
 
 = Version 2.0.2 =
 
-Release Date: **October 12, 2024**
+Release Date: **October 13, 2024**
 
 New Features:
 - **Added [cdown_short]** shortcode for a compact countdown format (e.g., "84d, 7h, 26m, 38s").
