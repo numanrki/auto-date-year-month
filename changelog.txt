@@ -1,17 +1,5 @@
 == Changelog ==
 
-= Version 2.0.3 =
-
-**Release Date:** January 27, 2025
-
-- Improved layout for donation features:
-  - **Added a QR code** for PayPal donations on the left side of the donation section with a responsive popup for better user experience.
-  - Positioned the PayPal donation button on the right side of the coffee button for a more intuitive layout.
-- Styled QR code popup with a close button ("×") for improved usability.
-- **Removed Freemius SDK** integration to make the plugin lightweight and reduce external dependencies.
-- **Fixed minor** alignment issues with donation buttons on smaller screens.
-- **Simplified code** structure for better maintainability.
-
 = Version 2.0.2 =
 
 Release Date: **October 13, 2024**
