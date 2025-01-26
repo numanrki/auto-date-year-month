@@ -5,13 +5,13 @@
 ?>
 <link rel="stylesheet" type="text/css" href="<?php echo $css_path; ?>">
 
-
-
   <body>
     <div class="welcome-page-wrap">
-    <div style="text-align: center; margin-bottom: -35px;">
-    <a href="https://wordpress.org/plugins/auto-date-year-month/" target="_blank"><img src="<?php echo plugins_url('/aadmy-assets/logos/aadmy-logo.svg', dirname(__FILE__)); ?>" alt="AADMY Logo"></a>
-</div>
+      <div style="text-align: center; margin-bottom: -35px;">
+        <a href="https://wordpress.org/plugins/auto-date-year-month/" target="_blank">
+          <img src="<?php echo plugins_url('/aadmy-assets/logos/aadmy-logo.svg', dirname(__FILE__)); ?>" alt="AADMY Logo">
+        </a>
+      </div>
       <h1>Welcome to the AADMY Add Auto Date Month Year Plugin</h1>
       <p>Thank you for installing our plugin. With this plugin, you can easily add auto dates, months, and years to your WordPress posts and pages using shortcodes. Some of the shortcodes that you can use include:</p>
       
@@ -86,8 +86,26 @@
       
       <p>For more information and usage examples, you can visit our <strong><a class="underlined-link" href="https://bit.ly/AadmyGuide" target="_blank">plugin page</a></strong>.</p>
       <p>If you find this plugin useful, please consider buying us a coffee as a token of your appreciation. We rely on donations to keep our plugin development going and your support is greatly appreciated.</p>
-      
     </div>
+
+    <!-- Updated Section -->
+    <div style="display: flex; justify-content: center; align-items: center; margin-top: 50px;">
+      <div style="position: relative;">
+        <img src="<?php echo plugins_url('/aadmy-assets/logos/PayPalQR.png', dirname(__FILE__)); ?>" alt="QR Code" style="box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); cursor: pointer;" onclick="document.getElementById('qrPopup').style.display='block'">
+        <div id="qrPopup" style="display: none; position: fixed; top: 50%; left: 50%; transform: translate(-50%, -50%); background: white; padding: 20px; box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.2);">
+          <img src="<?php echo plugins_url('/aadmy-assets/logos/PayPalQR.png', dirname(__FILE__)); ?>" alt="QR Code">
+          <button onclick="document.getElementById('qrPopup').style.display='none'">Close</button>
+        </div>
+      </div>
+      <div style="margin-left: 20px;">
+        <form action="https://www.paypal.com/donate" method="post" target="_top">
+          <input type="hidden" name="campaign_id" value="8B2BUMYF88UZJ" />
+          <input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_donate_LG.gif" border="0" name="submit" title="PayPal - The safer, easier way to pay online!" alt="Donate with PayPal button" />
+          <img alt="" border="0" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1" />
+        </form>
+      </div>
+    </div>
+    <!-- End of Updated Section -->
 
     <div class="button-aadmy-bottom-container">
       <?php
