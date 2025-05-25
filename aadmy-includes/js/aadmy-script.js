@@ -1,5 +1,8 @@
 
-function copyShortcodeAadmy(button, shortcode) {
+function copyShortcodeAadmy(button, shortcode, event) {
+  if (event) {
+    event.preventDefault();
+  }
   if (navigator.clipboard && window.isSecureContext) {
     // Use the Clipboard API if available
     navigator.clipboard.writeText(shortcode).then(() => {

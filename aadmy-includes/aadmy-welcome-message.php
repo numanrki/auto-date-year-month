@@ -34,55 +34,55 @@
               <td>Current Year</td>
               <td><?php echo do_shortcode('[cy]'); ?></td>
               <td><b>[cy]</b></td>
-              <td><a href="#" class="copy-link" onclick="copyShortcodeAadmy(this, '[cy]')">Copy</a></td>
+              <td><a href="javascript:void(0)" class="copy-link" onclick="copyShortcodeAadmy(this, '[cy]', event)">Copy</a></td>
             </tr>
             <tr>
               <td>Previous Year</td>
               <td><?php echo do_shortcode('[py]'); ?></td>
               <td><b>[py]</b></td>
-              <td><a href="#" class="copy-link" onclick="copyShortcodeAadmy(this, '[py]')">Copy</a></td>
+              <td><a href="javascript:void(0)" class="copy-link" onclick="copyShortcodeAadmy(this, '[py]', event)">Copy</a></td>
             </tr>
             <tr>
               <td>Next Year</td>
               <td><?php echo do_shortcode('[ny]'); ?></td>
               <td><b>[ny]</b></td>
-              <td><a href="#" class="copy-link" onclick="copyShortcodeAadmy(this, '[ny]')">Copy</a></td>
+              <td><a href="javascript:void(0)" class="copy-link" onclick="copyShortcodeAadmy(this, '[ny]', event)">Copy</a></td>
             </tr>
             <tr>
               <td>Current Day</td>
               <td><?php echo do_shortcode('[day]'); ?></td>
               <td><b>[day]</b></td>
-              <td><a href="#" class="copy-link" onclick="copyShortcodeAadmy(this, '[day]')">Copy</a></td>
+              <td><a href="javascript:void(0)" class="copy-link" onclick="copyShortcodeAadmy(this, '[day]', event)">Copy</a></td>
             </tr>
             <tr>
               <td>Current Date</td>
               <td><?php echo do_shortcode('[cd]'); ?></td>
               <td><b>[cd]</b></td>
-              <td><a href="#" class="copy-link" onclick="copyShortcodeAadmy(this, '[cd]')">Copy</a></td>
+              <td><a href="javascript:void(0)" class="copy-link" onclick="copyShortcodeAadmy(this, '[cd]', event)">Copy</a></td>
             </tr>
             <tr>
               <td>Current Month</td>
               <td><?php echo do_shortcode('[cm]'); ?></td>
               <td><b>[cm]</b></td>
-              <td><a href="#" class="copy-link" onclick="copyShortcodeAadmy(this, '[cm]')">Copy</a></td>
+              <td><a href="javascript:void(0)" class="copy-link" onclick="copyShortcodeAadmy(this, '[cm]', event)">Copy</a></td>
             </tr>
             <tr>
               <td>Previous Month</td>
               <td><?php echo do_shortcode('[pm]'); ?></td>
               <td><b>[pm]</b></td>
-              <td><a href="#" class="copy-link" onclick="copyShortcodeAadmy(this, '[pm]')">Copy</a></td>
+              <td><a href="javascript:void(0)" class="copy-link" onclick="copyShortcodeAadmy(this, '[pm]', event)">Copy</a></td>
             </tr>
             <tr>
               <td>Next Month</td>
               <td><?php echo do_shortcode('[nm]'); ?></td>
               <td><b>[nm]</b></td>
-              <td><a href="#" class="copy-link" onclick="copyShortcodeAadmy(this, '[nm]')">Copy</a></td>
+              <td><a href="javascript:void(0)" class="copy-link" onclick="copyShortcodeAadmy(this, '[nm]', event)">Copy</a></td>
             </tr>
             <tr>
               <td>Full Date</td>
               <td><?php echo do_shortcode('[today]'); ?></td>
               <td><b>[today]</b></td>
-              <td><a href="#" class="copy-link" onclick="copyShortcodeAadmy(this, '[today]')">Copy</a></td>
+              <td><a href="javascript:void(0)" class="copy-link" onclick="copyShortcodeAadmy(this, '[today]', event)">Copy</a></td>
             </tr>
           </tbody>
         </table>
