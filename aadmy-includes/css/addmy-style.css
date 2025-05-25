@@ -162,3 +162,12 @@ a:hover {
 }
 
 
+/* Hostinger Ad Styles */
+.hostinger-ad-container {
+  text-align: center;
+  padding: 5px 0;
+}
+.hostinger-ad-container img {
+  max-width: 200px;
+  cursor: pointer;
+}

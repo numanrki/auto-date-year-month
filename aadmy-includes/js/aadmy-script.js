@@ -1,3 +1,4 @@
+
 function copyShortcodeAadmy(button, shortcode) {
   if (navigator.clipboard && window.isSecureContext) {
     // Use the Clipboard API if available
@@ -32,3 +33,14 @@ function copyShortcodeAadmy(button, shortcode) {
     }, 3000); // 3 seconds delay
   }
 }
+
+
+// Hostinger Ad Click Handler
+document.addEventListener('DOMContentLoaded', function() {
+  var ad = document.getElementById('aadmy-hostinger-ad');
+  if (ad) {
+    ad.addEventListener('click', function() {
+      window.location.href = 'https://bit.ly/HostingerAddmyWP';
+    });
+  }
+});

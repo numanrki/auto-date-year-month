@@ -5,7 +5,7 @@
  * Description: Easily boost your SEO by dynamically adding current dates, months, and years to your WordPress posts, pages, keeping your content fresh without manual updates.
  * Version: 2.0.3
  * Requires at least: 6.0
- * Tested up to: 6.7.1
+ * Tested up to: 6.8.1
  * Requires PHP: 7.4
  * Author: Numan Rasheed 
  * Author URI: https://www.numanrki.com

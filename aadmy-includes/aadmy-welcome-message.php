@@ -15,6 +15,10 @@
       <h1>Welcome to the AADMY Add Auto Date Month Year Plugin</h1>
       <p>Thank you for installing our plugin. With this plugin, you can easily add auto dates, months, and years to your WordPress posts and pages using shortcodes. Some of the shortcodes that you can use include:</p>
       
+      <div class="hostinger-ad-container" style="text-align: center; padding: 5px 0;">
+        <?php echo '<img id="aadmy-hostinger-ad" src="' . plugins_url('/aadmy-assets/logos/hostinger.png', dirname(__FILE__)) . '" alt="Hostinger Logo" style="cursor:pointer;" />'; ?>
+      </div>
+      
       <div style="display: flex; align-items: center; justify-content: center;">
         <table style="width: 1000px;" class="styled-table">
           <thead>
@@ -109,5 +113,15 @@
     </div>
 
     <script src="<?php echo $js_path; ?>"></script> <!-- Include JS File -->
+    <script type="text/javascript">
+      document.addEventListener('DOMContentLoaded', function() {
+        var ad = document.getElementById('aadmy-hostinger-ad');
+        if (ad) {
+          ad.addEventListener('click', function() {
+            window.open('https://bit.ly/HostingerAddmyWP', '_blank');
+          });
+        }
+      });
+    </script>
   </body>
 </html>
