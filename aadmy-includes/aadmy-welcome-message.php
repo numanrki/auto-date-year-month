@@ -88,27 +88,7 @@
       <p>If you find this plugin useful, please consider buying us a coffee as a token of your appreciation. We rely on donations to keep our plugin development going and your support is greatly appreciated.</p>
     </div>
 
-    <!-- Updated Section -->
-    <div class="button-aadmy-bottom-container" style="display: flex; justify-content: space-between; align-items: center;">
-      <div style="position: relative;">
-        <img src="https://via.placeholder.com/50" alt="QR Code" style="box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); cursor: pointer;" onclick="document.getElementById('qrPopup').style.display='block'">
-        <div id="qrPopup" style="display: none; position: fixed; top: 50%; left: 50%; transform: translate(-50%, -50%); background: white; padding: 20px; border-radius: 8px; box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.2);">
-          <img src="https://via.placeholder.com/300" alt="QR Code" style="display: block; margin-bottom: 10px;">
-          <button onclick="document.getElementById('qrPopup').style.display='none'" style="position: absolute; top: 5px; right: 5px; background: red; color: white; border: none; border-radius: 50%; width: 25px; height: 25px; font-size: 16px; cursor: pointer;">&times;</button>
-        </div>
-      </div>
-      <a href="https://www.buymeacoffee.com/numanrki">
-        <img src="https://img.buymeacoffee.com/button-api/?text=Buy me a coffee&emoji=☕&slug=numanrki&button_colour=ff0027&font_colour=ffffff&font_family=Cookie&outline_colour=ffffff&coffee_colour=FFDD00" />
-      </a>
-      <div>
-        <form action="https://www.paypal.com/donate" method="post" target="_top">
-          <input type="hidden" name="campaign_id" value="8B2BUMYF88UZJ" />
-          <input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_donate_LG.gif" border="0" name="submit" title="PayPal - The safer, easier way to pay online!" alt="Donate with PayPal button" />
-          <img alt="" border="0" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1" />
-        </form>
-      </div>
-    </div>
-    <!-- End of Updated Section -->
+
 
     <div class="button-aadmy-bottom-container">
       <?php

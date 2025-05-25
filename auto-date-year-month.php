@@ -59,7 +59,7 @@ if ( ! function_exists( 'aadmyipd_fs' ) ) {
   do_action( 'aadmyipd_fs_loaded' );
 }
 
-define( 'Auto_Date_Year_Month_AADMY', '2.0.2' );
+define( 'Auto_Date_Year_Month_AADMY', '2.0.3' );
 
 // Include the offsets file
 include_once( plugin_dir_path( __FILE__ ) . 'aadmy-shortcodes/aadmy-offsets.php' );
@@ -181,9 +181,7 @@ add_shortcode('nm', 'get_next_month_aadmy');
 
 /* Previous Month Name */
 function get_prev_month_aadmy() {
-  $current_month = date_i18n('m');
-  $prev_month = $current_month - 1;
-  $prev_month_name = date_i18n('F', strtotime("2020-$prev_month-01"));
+  $prev_month_name = date_i18n('F', strtotime('-1 month'));
   return $prev_month_name;
 }
 add_shortcode( 'pm', 'get_prev_month_aadmy' );
@@ -219,9 +217,6 @@ add_action('wp_footer', 'do_shortcode');
 // Comments
 add_filter('comment_text', 'do_shortcode');
 
-// Media
-add_filter('the_content', 'do_shortcode');
-
 
 
 // Archives
@@ -251,7 +246,7 @@ add_filter('elementor/frontend/the_content', 'do_shortcode');
 remove_filter('comment_text', 'do_shortcode');
 
 // Sanitize comment content to remove shortcodes and HTML tags
-add_filter('pre_comment_content', 'wp_strip_all_tags');
+add_filter('pre_comment_content', 'wp_kses_post'); // Allows safe HTML, consider making this configurable
 
 
 
@@ -291,6 +286,4 @@ include( plugin_dir_path( __FILE__ ) . 'aadmy-includes/aadmy-menu.php' );
  }
 
 
- // Include the donation notice
- include( plugin_dir_path(__FILE__) . 'aadmy-includes/aadmy-notices/aadmy-donation.php' );
 

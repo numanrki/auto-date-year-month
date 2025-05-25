@@ -158,6 +158,13 @@ To add a date to your WordPress posts, you can use the shortcode [today], which 
 
 == Changelog ==
 
+= Version 2.0.3 =
+
+Release Date: **May 25, 2025**
+
+Bug Fixes:
+- Removed the donation notice include from the main plugin file.
+
 = Version 2.0.2 =
 
 Release Date: **October 13, 2024**
