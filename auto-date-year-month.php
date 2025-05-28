@@ -3,7 +3,7 @@
  * Plugin Name: AADMY - Add Auto Date Month Year Into Posts
  * Plugin URI: https://wordpress.org/plugins/auto-date-year-month/
  * Description: Easily boost your SEO by dynamically adding current dates, months, and years to your WordPress posts, pages, keeping your content fresh without manual updates.
- * Version: 2.0.3
+ * Version: 2.0.4
  * Requires at least: 6.0
  * Tested up to: 6.8.1
  * Requires PHP: 7.4
@@ -14,52 +14,56 @@
  */
 
 
-// If this file is called directly, abort.
 
 
 if ( ! defined( 'WPINC' ) ) {
   die;
 }
 
+// Load Composer’s autoloader so Freemius (and any other libs) are available site-wide
+require_once __DIR__ . '/vendor/autoload.php';
+
 if ( ! function_exists( 'aadmyipd_fs' ) ) {
-  // Create a helper function for easy SDK access.
-  function aadmyipd_fs() {
-      global $aadmyipd_fs;
+    // Create a helper function for easy SDK access.
+    function aadmyipd_fs() {
+        global $aadmyipd_fs;
 
-      if ( ! isset( $aadmyipd_fs ) ) {
-          // Include Freemius SDK.
-          require_once dirname(__FILE__) . '/freemius/start.php';
+        if ( ! isset( $aadmyipd_fs ) ) {
+            // Include Freemius SDK.
+            // SDK is auto-loaded through composer
+            $aadmyipd_fs = fs_dynamic_init( array(
+                'id'                  => '11653',
+                'slug'                => 'auto-date-year-month',
+                'premium_slug'        => 'add-auto-date-month-year-in-posts-dynamically-premium',
+                'type'                => 'plugin',
+                'public_key'          => 'pk_f571b91cf88e2eaa5eb8e0f903478',
+                'is_premium'          => false,
+                'has_addons'          => false,
+                'has_paid_plans'      => false,
+                'menu'                => array(
+                    'slug'           => 'aadmy-settings',
+                    'first-path'     => 'options-general.php?page=aadmy-settings',
+                    'account'        => false,
+                    'contact'        => false,
+                    'support'        => false,
+                    'parent'         => array(
+                        'slug' => 'options-general.php',
+                    ),
+                ),
+            ) );
+        }
 
-          $aadmyipd_fs = fs_dynamic_init( array(
-              'id'                  => '11653',
-              'slug'                => 'auto-date-year-month',
-              'type'                => 'plugin',
-              'public_key'          => 'pk_f571b91cf88e2eaa5eb8e0f903478',
-              'is_premium'          => false,
-              'has_addons'          => false,
-              'has_paid_plans'      => false,
-              'menu'                => array(
-                  'slug'           => 'aadmy-settings',
-                  'first-path'     => 'options-general.php?page=aadmy-settings',
-                  'account'        => false,
-                  'contact'        => false,
-                  'parent'         => array(
-                      'slug' => 'options-general.php',
-                  ),
-              ),
-          ) );
-      }
+        return $aadmyipd_fs;
+    }
 
-      return $aadmyipd_fs;
-  }
-
-  // Init Freemius.
-  aadmyipd_fs();
-  // Signal that SDK was initiated.
-  do_action( 'aadmyipd_fs_loaded' );
+    // Init Freemius.
+    aadmyipd_fs();
+    // Signal that SDK was initiated.
+    do_action( 'aadmyipd_fs_loaded' );
 }
 
-define( 'Auto_Date_Year_Month_AADMY', '2.0.3' );
+// Define the plugin version
+define( 'Auto_Date_Year_Month_AADMY', '2.0.4' );
 
 // Include the offsets file
 include_once( plugin_dir_path( __FILE__ ) . 'aadmy-shortcodes/aadmy-offsets.php' );
