@@ -13,7 +13,12 @@ function aadmy_countdown($atts) {
     }
 
     // Get the target date from user input and localize it
-    $target_date = new DateTime($attributes['date']);
+    $raw_date = sanitize_text_field($attributes['date']);
+    try {
+        $target_date = new DateTime($raw_date);
+    } catch (Exception $e) {
+        return __('Error: Invalid date format. Use mm/dd/yyyy or a valid date string.', 'aadmy-plugin');
+    }
     $target_timestamp = $target_date->getTimestamp(); // Get timestamp in seconds
 
     // Output HTML with JavaScript-enabled countdown container
@@ -69,7 +74,12 @@ function aadmy_countdown_simple($atts) {
     }
 
     // Get the target date from user input and localize it
-    $target_date = new DateTime($attributes['date']);
+    $raw_date = sanitize_text_field($attributes['date']);
+    try {
+        $target_date = new DateTime($raw_date);
+    } catch (Exception $e) {
+        return __('Error: Invalid date format. Use mm/dd/yyyy or a valid date string.', 'aadmy-plugin');
+    }
     $target_timestamp = $target_date->getTimestamp(); // Get timestamp in seconds
 
     // Output HTML with JavaScript-enabled countdown container
