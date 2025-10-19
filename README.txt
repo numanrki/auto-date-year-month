@@ -6,7 +6,7 @@ Author: https://numanrki.com
 Donate link: https://bit.ly/aadmyCoffee
 Requires at least: 5.0
 Tested up to: 6.8.1
-Stable tag: 2.0.5
+Stable tag: 2.0.3
 Requires PHP: 7.4
 License: GPL3
 License URI: http://www.gnu.org/licenses/gpl-3.0.html
@@ -158,9 +158,16 @@ To add a date to your WordPress posts, you can use the shortcode [today], which 
 
 == Changelog ==
 
-= Version 2.0.4 =
+= Version 2.0.5 =
 
 Release Date: **May 28, 2025**
+
+Bug Fixes:
+- Minor Bugs Fixed
+
+= Version 2.0.4 =
+
+Release Date: **May 27, 2025**
 
 Bug Fixes:
 - Add SDK autoload include

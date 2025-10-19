@@ -3,8 +3,8 @@
 // Add Site Name with URL 
 function shortcode_get_domain_name_aadmy()
 {
-    $site_url = esc_url( home_url() );
-    $site_name = esc_html( get_bloginfo('name') );
+    $site_url = home_url();
+    $site_name = get_bloginfo('name');
     return '<a href="' . $site_url . '">' . $site_name . '</a>';
 }
 add_shortcode('st', 'shortcode_get_domain_name_aadmy');
@@ -71,12 +71,9 @@ add_shortcode('age', 'get_current_age_aadmy');
 
 // // Define the function of Custom event Happned years/months/days ago
 function aadmy_event_time_elapsed($event_date) {
-  $dt = DateTime::createFromFormat('m/d/Y', (string) $event_date);
-  if (!$dt) {
-      return __('Invalid date format. Use mm/dd/yyyy', 'aadmy-plugin');
-  }
+  $event_date = DateTime::createFromFormat('m/d/Y', $event_date);
   $current_time = new DateTime();
-  $interval = $current_time->diff($dt);
+  $interval = $current_time->diff($event_date);
 
   if ($interval->y > 0) {
       return "{$interval->y} years, {$interval->m} months, and {$interval->d} days ago";

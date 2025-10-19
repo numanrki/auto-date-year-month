@@ -1,8 +1,15 @@
 == Changelog ==
 
-= Version 2.0.4 =
+= Version 2.0.5 =
 
 Release Date: **May 28, 2025**
+
+Bug Fixes:
+- Minor Bugs Fixed
+
+= Version 2.0.4 =
+
+Release Date: **May 27, 2025**
 
 Bug Fixes:
 - Add SDK autoload include
