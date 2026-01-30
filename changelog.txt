@@ -1,5 +1,12 @@
 == Changelog ==
 
+= Version 2.0.6 =
+
+Release Date: **January 30, 2026**
+
+Bug Fixes:
+- Prevent Freemius SDK autoloader conflicts when multiple Freemius-based plugins load Composer in the same request.
+
 = Version 2.0.5 =
 
 Release Date: **May 28, 2025**
